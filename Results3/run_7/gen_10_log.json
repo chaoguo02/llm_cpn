@@ -1,0 +1,2974 @@
+{
+  "avg_time": 8714.981013071134,
+  "task_execution_log": [
+    {
+      "task_id": "TF0-T0",
+      "taskflow_id": 0,
+      "node_id": "N0(CloudNode)",
+      "start_time": 0.79587450816311,
+      "end_time": 4.996955535086188
+    },
+    {
+      "task_id": "TF0-T1",
+      "taskflow_id": 0,
+      "node_id": "N0(CloudNode)",
+      "start_time": 4.996955535086188,
+      "end_time": 7.649222718932341
+    },
+    {
+      "task_id": "TF5-T0",
+      "taskflow_id": 5,
+      "node_id": "N1(CloudNode)",
+      "start_time": 5.351437355289396,
+      "end_time": 6.6192819704618095
+    },
+    {
+      "task_id": "TF5-T1",
+      "taskflow_id": 5,
+      "node_id": "N1(CloudNode)",
+      "start_time": 6.6192819704618095,
+      "end_time": 330.3156544627377
+    },
+    {
+      "task_id": "TF1-T0",
+      "taskflow_id": 1,
+      "node_id": "N0(CloudNode)",
+      "start_time": 7.649222718932341,
+      "end_time": 12.952838817547725
+    },
+    {
+      "task_id": "TF0-T2",
+      "taskflow_id": 0,
+      "node_id": "N0(CloudNode)",
+      "start_time": 12.952838817547725,
+      "end_time": 14.64612699539388
+    },
+    {
+      "task_id": "TF3-T0",
+      "taskflow_id": 3,
+      "node_id": "N0(CloudNode)",
+      "start_time": 14.64612699539388,
+      "end_time": 18.188503004470803
+    },
+    {
+      "task_id": "TF0-T3",
+      "taskflow_id": 0,
+      "node_id": "N0(CloudNode)",
+      "start_time": 18.188503004470803,
+      "end_time": 26.680043248470803
+    },
+    {
+      "task_id": "TF3-T1",
+      "taskflow_id": 3,
+      "node_id": "N5(FogNode)",
+      "start_time": 18.188503004470803,
+      "end_time": 26.15214055913747
+    },
+    {
+      "task_id": "TF1-T1",
+      "taskflow_id": 1,
+      "node_id": "N0(CloudNode)",
+      "start_time": 26.680043248470803,
+      "end_time": 35.5970481647785
+    },
+    {
+      "task_id": "TF7-T0",
+      "taskflow_id": 7,
+      "node_id": "N0(CloudNode)",
+      "start_time": 35.5970481647785,
+      "end_time": 45.257544943701575
+    },
+    {
+      "task_id": "TF8-T0",
+      "taskflow_id": 8,
+      "node_id": "N0(CloudNode)",
+      "start_time": 45.257544943701575,
+      "end_time": 50.27190628308619
+    },
+    {
+      "task_id": "TF7-T1",
+      "taskflow_id": 7,
+      "node_id": "N5(FogNode)",
+      "start_time": 45.257544943701575,
+      "end_time": 51.38701090811716
+    },
+    {
+      "task_id": "TF14-T0",
+      "taskflow_id": 14,
+      "node_id": "N0(CloudNode)",
+      "start_time": 50.27190628308619,
+      "end_time": 53.15986253000926
+    },
+    {
+      "task_id": "TF7-T2",
+      "taskflow_id": 7,
+      "node_id": "N5(FogNode)",
+      "start_time": 51.38701090811716,
+      "end_time": 59.84144672110418
+    },
+    {
+      "task_id": "TF23-T1",
+      "taskflow_id": 23,
+      "node_id": "N0(CloudNode)",
+      "start_time": 53.15986253000926,
+      "end_time": 54.58440395800926
+    },
+    {
+      "task_id": "TF25-T0",
+      "taskflow_id": 25,
+      "node_id": "N0(CloudNode)",
+      "start_time": 54.58440395800926,
+      "end_time": 55.57858327862465
+    },
+    {
+      "task_id": "TF26-T0",
+      "taskflow_id": 26,
+      "node_id": "N0(CloudNode)",
+      "start_time": 55.57858327862465,
+      "end_time": 59.20482786339388
+    },
+    {
+      "task_id": "TF24-T0",
+      "taskflow_id": 24,
+      "node_id": "N0(CloudNode)",
+      "start_time": 59.20482786339388,
+      "end_time": 67.02419514308619
+    },
+    {
+      "task_id": "TF26-T1",
+      "taskflow_id": 26,
+      "node_id": "N4(FogNode)",
+      "start_time": 59.20482786339388,
+      "end_time": 92.10722512872721
+    },
+    {
+      "task_id": "TF22-T0",
+      "taskflow_id": 22,
+      "node_id": "N0(CloudNode)",
+      "start_time": 67.02419514308619,
+      "end_time": 80.03086443831695
+    },
+    {
+      "task_id": "TF23-T0",
+      "taskflow_id": 23,
+      "node_id": "N0(CloudNode)",
+      "start_time": 80.03086443831695,
+      "end_time": 91.48841380077849
+    },
+    {
+      "task_id": "TF22-T1",
+      "taskflow_id": 22,
+      "node_id": "N5(FogNode)",
+      "start_time": 80.03086443831695,
+      "end_time": 87.16027803786751
+    },
+    {
+      "task_id": "TF25-T2",
+      "taskflow_id": 25,
+      "node_id": "N0(CloudNode)",
+      "start_time": 91.48841380077849,
+      "end_time": 103.27470349277849
+    },
+    {
+      "task_id": "TF25-T1",
+      "taskflow_id": 25,
+      "node_id": "N0(CloudNode)",
+      "start_time": 103.27470349277849,
+      "end_time": 117.81702477431695
+    },
+    {
+      "task_id": "TF32-T0",
+      "taskflow_id": 32,
+      "node_id": "N0(CloudNode)",
+      "start_time": 117.81702477431695,
+      "end_time": 119.5700004421631
+    },
+    {
+      "task_id": "TF36-T1",
+      "taskflow_id": 36,
+      "node_id": "N0(CloudNode)",
+      "start_time": 119.5700004421631,
+      "end_time": 124.20419838370157
+    },
+    {
+      "task_id": "TF31-T0",
+      "taskflow_id": 31,
+      "node_id": "N0(CloudNode)",
+      "start_time": 124.20419838370157,
+      "end_time": 139.14810934154772
+    },
+    {
+      "task_id": "TF24-T2",
+      "taskflow_id": 24,
+      "node_id": "N0(CloudNode)",
+      "start_time": 139.14810934154772,
+      "end_time": 171.65146767800925
+    },
+    {
+      "task_id": "TF4-T0",
+      "taskflow_id": 4,
+      "node_id": "N0(CloudNode)",
+      "start_time": 171.65146767800925,
+      "end_time": 229.6612800744708
+    },
+    {
+      "task_id": "TF44-T0",
+      "taskflow_id": 44,
+      "node_id": "N0(CloudNode)",
+      "start_time": 229.6612800744708,
+      "end_time": 232.84675550231694
+    },
+    {
+      "task_id": "TF4-T1",
+      "taskflow_id": 4,
+      "node_id": "N5(FogNode)",
+      "start_time": 229.6612800744708,
+      "end_time": 474.51021632537993
+    },
+    {
+      "task_id": "TF45-T1",
+      "taskflow_id": 45,
+      "node_id": "N0(CloudNode)",
+      "start_time": 232.84675550231694,
+      "end_time": 234.89327118508618
+    },
+    {
+      "task_id": "TF49-T0",
+      "taskflow_id": 49,
+      "node_id": "N0(CloudNode)",
+      "start_time": 234.89327118508618,
+      "end_time": 240.79406827339386
+    },
+    {
+      "task_id": "TF15-T0",
+      "taskflow_id": 15,
+      "node_id": "N0(CloudNode)",
+      "start_time": 240.79406827339386,
+      "end_time": 325.9387318929323
+    },
+    {
+      "task_id": "TF51-T0",
+      "taskflow_id": 51,
+      "node_id": "N0(CloudNode)",
+      "start_time": 325.9387318929323,
+      "end_time": 344.4048169401631
+    },
+    {
+      "task_id": "TF15-T1",
+      "taskflow_id": 15,
+      "node_id": "N2(FogNode)",
+      "start_time": 325.9387318929323,
+      "end_time": 361.8700840981271
+    },
+    {
+      "task_id": "TF9-T0",
+      "taskflow_id": 9,
+      "node_id": "N1(CloudNode)",
+      "start_time": 330.3156544627377,
+      "end_time": 353.4020996955321
+    },
+    {
+      "task_id": "TF5-T3",
+      "taskflow_id": 5,
+      "node_id": "N3(FogNode)",
+      "start_time": 330.3156544627377,
+      "end_time": 356.09269181073773
+    },
+    {
+      "task_id": "TF55-T0",
+      "taskflow_id": 55,
+      "node_id": "N0(CloudNode)",
+      "start_time": 344.4048169401631,
+      "end_time": 348.8134267784708
+    },
+    {
+      "task_id": "TF43-T0",
+      "taskflow_id": 43,
+      "node_id": "N0(CloudNode)",
+      "start_time": 348.8134267784708,
+      "end_time": 373.5075187950862
+    },
+    {
+      "task_id": "TF11-T0",
+      "taskflow_id": 11,
+      "node_id": "N1(CloudNode)",
+      "start_time": 353.4020996955321,
+      "end_time": 355.2180731567173
+    },
+    {
+      "task_id": "TF10-T0",
+      "taskflow_id": 10,
+      "node_id": "N1(CloudNode)",
+      "start_time": 355.2180731567173,
+      "end_time": 361.45209989005065
+    },
+    {
+      "task_id": "TF51-T1",
+      "taskflow_id": 51,
+      "node_id": "N3(FogNode)",
+      "start_time": 356.09269181073773,
+      "end_time": 372.10008079553774
+    },
+    {
+      "task_id": "TF12-T0",
+      "taskflow_id": 12,
+      "node_id": "N1(CloudNode)",
+      "start_time": 361.45209989005065,
+      "end_time": 370.3450937704951
+    },
+    {
+      "task_id": "TF11-T1",
+      "taskflow_id": 11,
+      "node_id": "N2(FogNode)",
+      "start_time": 361.8700840981271,
+      "end_time": 411.9319198666466
+    },
+    {
+      "task_id": "TF6-T1",
+      "taskflow_id": 6,
+      "node_id": "N1(CloudNode)",
+      "start_time": 370.3450937704951,
+      "end_time": 388.404988413974
+    },
+    {
+      "task_id": "TF5-T2",
+      "taskflow_id": 5,
+      "node_id": "N3(FogNode)",
+      "start_time": 372.10008079553774,
+      "end_time": 1214.4550368902046
+    },
+    {
+      "task_id": "TF21-T0",
+      "taskflow_id": 21,
+      "node_id": "N0(CloudNode)",
+      "start_time": 373.5075187950862,
+      "end_time": 444.46186427924005
+    },
+    {
+      "task_id": "TF12-T1",
+      "taskflow_id": 12,
+      "node_id": "N1(CloudNode)",
+      "start_time": 388.404988413974,
+      "end_time": 400.168531302633
+    },
+    {
+      "task_id": "TF6-T2",
+      "taskflow_id": 6,
+      "node_id": "N4(FogNode)",
+      "start_time": 388.404988413974,
+      "end_time": 476.6483323695838
+    },
+    {
+      "task_id": "TF10-T1",
+      "taskflow_id": 10,
+      "node_id": "N1(CloudNode)",
+      "start_time": 400.168531302633,
+      "end_time": 426.92090645018857
+    },
+    {
+      "task_id": "TF12-T2",
+      "taskflow_id": 12,
+      "node_id": "N2(FogNode)",
+      "start_time": 411.9319198666466,
+      "end_time": 645.5482510519344
+    },
+    {
+      "task_id": "TF17-T1",
+      "taskflow_id": 17,
+      "node_id": "N1(CloudNode)",
+      "start_time": 426.92090645018857,
+      "end_time": 441.26295761876
+    },
+    {
+      "task_id": "TF30-T1",
+      "taskflow_id": 30,
+      "node_id": "N1(CloudNode)",
+      "start_time": 441.26295761876,
+      "end_time": 442.7096686859029
+    },
+    {
+      "task_id": "TF30-T2",
+      "taskflow_id": 30,
+      "node_id": "N1(CloudNode)",
+      "start_time": 442.7096686859029,
+      "end_time": 444.0625851259029
+    },
+    {
+      "task_id": "TF30-T0",
+      "taskflow_id": 30,
+      "node_id": "N1(CloudNode)",
+      "start_time": 444.0625851259029,
+      "end_time": 445.06306114876
+    },
+    {
+      "task_id": "TF59-T0",
+      "taskflow_id": 59,
+      "node_id": "N0(CloudNode)",
+      "start_time": 444.46186427924005,
+      "end_time": 455.56067652231695
+    },
+    {
+      "task_id": "TF34-T1",
+      "taskflow_id": 34,
+      "node_id": "N1(CloudNode)",
+      "start_time": 445.06306114876,
+      "end_time": 448.2048969319029
+    },
+    {
+      "task_id": "TF37-T0",
+      "taskflow_id": 37,
+      "node_id": "N1(CloudNode)",
+      "start_time": 448.2048969319029,
+      "end_time": 450.9857655136172
+    },
+    {
+      "task_id": "TF30-T3",
+      "taskflow_id": 30,
+      "node_id": "N1(CloudNode)",
+      "start_time": 450.9857655136172,
+      "end_time": 478.5215942336172
+    },
+    {
+      "task_id": "TF60-T0",
+      "taskflow_id": 60,
+      "node_id": "N0(CloudNode)",
+      "start_time": 455.56067652231695,
+      "end_time": 466.3586025978554
+    },
+    {
+      "task_id": "TF65-T1",
+      "taskflow_id": 65,
+      "node_id": "N0(CloudNode)",
+      "start_time": 466.3586025978554,
+      "end_time": 476.2520336326246
+    },
+    {
+      "task_id": "TF21-T1",
+      "taskflow_id": 21,
+      "node_id": "N5(FogNode)",
+      "start_time": 474.51021632537993,
+      "end_time": 803.0811669586526
+    },
+    {
+      "task_id": "TF16-T1",
+      "taskflow_id": 16,
+      "node_id": "N0(CloudNode)",
+      "start_time": 476.2520336326246,
+      "end_time": 641.2095845213938
+    },
+    {
+      "task_id": "TF65-T2",
+      "taskflow_id": 65,
+      "node_id": "N7(EdgeNode)",
+      "start_time": 476.2520336326246,
+      "end_time": 636.9673220218139
+    },
+    {
+      "task_id": "TF33-T0",
+      "taskflow_id": 33,
+      "node_id": "N1(CloudNode)",
+      "start_time": 478.5215942336172,
+      "end_time": 501.9402210572034
+    },
+    {
+      "task_id": "TF42-T0",
+      "taskflow_id": 42,
+      "node_id": "N1(CloudNode)",
+      "start_time": 501.9402210572034,
+      "end_time": 505.35407105996205
+    },
+    {
+      "task_id": "TF29-T1",
+      "taskflow_id": 29,
+      "node_id": "N1(CloudNode)",
+      "start_time": 505.35407105996205,
+      "end_time": 520.1697566729906
+    },
+    {
+      "task_id": "TF6-T0",
+      "taskflow_id": 6,
+      "node_id": "N1(CloudNode)",
+      "start_time": 520.1697566729906,
+      "end_time": 602.0689336433679
+    },
+    {
+      "task_id": "TF48-T2",
+      "taskflow_id": 48,
+      "node_id": "N1(CloudNode)",
+      "start_time": 602.0689336433679,
+      "end_time": 608.1992407033285
+    },
+    {
+      "task_id": "TF38-T1",
+      "taskflow_id": 38,
+      "node_id": "N1(CloudNode)",
+      "start_time": 608.1992407033285,
+      "end_time": 646.3958235896142
+    },
+    {
+      "task_id": "TF33-T3",
+      "taskflow_id": 33,
+      "node_id": "N7(EdgeNode)",
+      "start_time": 636.9673220218139,
+      "end_time": 772.8555994942021
+    },
+    {
+      "task_id": "TF24-T1",
+      "taskflow_id": 24,
+      "node_id": "N0(CloudNode)",
+      "start_time": 641.2095845213938,
+      "end_time": 740.576399604317
+    },
+    {
+      "task_id": "TF10-T2",
+      "taskflow_id": 10,
+      "node_id": "N2(FogNode)",
+      "start_time": 645.5482510519344,
+      "end_time": 875.298343380165
+    },
+    {
+      "task_id": "TF20-T0",
+      "taskflow_id": 20,
+      "node_id": "N1(CloudNode)",
+      "start_time": 646.3958235896142,
+      "end_time": 688.8866845262809
+    },
+    {
+      "task_id": "TF63-T0",
+      "taskflow_id": 63,
+      "node_id": "N1(CloudNode)",
+      "start_time": 688.8866845262809,
+      "end_time": 694.9099038875253
+    },
+    {
+      "task_id": "TF53-T0",
+      "taskflow_id": 53,
+      "node_id": "N1(CloudNode)",
+      "start_time": 694.9099038875253,
+      "end_time": 714.5241888357168
+    },
+    {
+      "task_id": "TF68-T0",
+      "taskflow_id": 68,
+      "node_id": "N1(CloudNode)",
+      "start_time": 714.5241888357168,
+      "end_time": 717.4946896151804
+    },
+    {
+      "task_id": "TF35-T0",
+      "taskflow_id": 35,
+      "node_id": "N1(CloudNode)",
+      "start_time": 717.4946896151804,
+      "end_time": 802.9155092985454
+    },
+    {
+      "task_id": "TF67-T0",
+      "taskflow_id": 67,
+      "node_id": "N0(CloudNode)",
+      "start_time": 740.576399604317,
+      "end_time": 778.1590102949324
+    },
+    {
+      "task_id": "TF24-T3",
+      "taskflow_id": 24,
+      "node_id": "N9(EdgeNode)",
+      "start_time": 740.576399604317,
+      "end_time": 873.0322787732965
+    },
+    {
+      "task_id": "TF20-T1",
+      "taskflow_id": 20,
+      "node_id": "N7(EdgeNode)",
+      "start_time": 772.8555994942021,
+      "end_time": 820.808934997549
+    },
+    {
+      "task_id": "TF45-T0",
+      "taskflow_id": 45,
+      "node_id": "N0(CloudNode)",
+      "start_time": 778.1590102949324,
+      "end_time": 836.8639523826247
+    },
+    {
+      "task_id": "TF64-T0",
+      "taskflow_id": 64,
+      "node_id": "N1(CloudNode)",
+      "start_time": 802.9155092985454,
+      "end_time": 823.5977614551487
+    },
+    {
+      "task_id": "TF30-T4",
+      "taskflow_id": 30,
+      "node_id": "N5(FogNode)",
+      "start_time": 803.0811669586526,
+      "end_time": 832.9225564269824
+    },
+    {
+      "task_id": "TF69-T0",
+      "taskflow_id": 69,
+      "node_id": "N1(CloudNode)",
+      "start_time": 823.5977614551487,
+      "end_time": 829.9993552900376
+    },
+    {
+      "task_id": "TF58-T0",
+      "taskflow_id": 58,
+      "node_id": "N1(CloudNode)",
+      "start_time": 829.9993552900376,
+      "end_time": 850.4670051654996
+    },
+    {
+      "task_id": "TF29-T2",
+      "taskflow_id": 29,
+      "node_id": "N5(FogNode)",
+      "start_time": 832.9225564269824,
+      "end_time": 1243.2849537938405
+    },
+    {
+      "task_id": "TF72-T0",
+      "taskflow_id": 72,
+      "node_id": "N0(CloudNode)",
+      "start_time": 836.8639523826247,
+      "end_time": 847.4234345878555
+    },
+    {
+      "task_id": "TF76-T0",
+      "taskflow_id": 76,
+      "node_id": "N0(CloudNode)",
+      "start_time": 847.4234345878555,
+      "end_time": 850.9860125166247
+    },
+    {
+      "task_id": "TF61-T0",
+      "taskflow_id": 61,
+      "node_id": "N1(CloudNode)",
+      "start_time": 850.4670051654996,
+      "end_time": 871.893838341308
+    },
+    {
+      "task_id": "TF80-T0",
+      "taskflow_id": 80,
+      "node_id": "N0(CloudNode)",
+      "start_time": 850.9860125166247,
+      "end_time": 852.9434560989324
+    },
+    {
+      "task_id": "TF82-T0",
+      "taskflow_id": 82,
+      "node_id": "N0(CloudNode)",
+      "start_time": 852.9434560989324,
+      "end_time": 854.416359698317
+    },
+    {
+      "task_id": "TF89-T0",
+      "taskflow_id": 89,
+      "node_id": "N0(CloudNode)",
+      "start_time": 854.416359698317,
+      "end_time": 855.5237922050862
+    },
+    {
+      "task_id": "TF73-T0",
+      "taskflow_id": 73,
+      "node_id": "N0(CloudNode)",
+      "start_time": 855.5237922050862,
+      "end_time": 878.6369309609324
+    },
+    {
+      "task_id": "TF58-T1",
+      "taskflow_id": 58,
+      "node_id": "N1(CloudNode)",
+      "start_time": 871.893838341308,
+      "end_time": 901.6763712666336
+    },
+    {
+      "task_id": "TF82-T1",
+      "taskflow_id": 82,
+      "node_id": "N9(EdgeNode)",
+      "start_time": 873.0322787732965,
+      "end_time": 921.0525292314189
+    },
+    {
+      "task_id": "TF12-T3",
+      "taskflow_id": 12,
+      "node_id": "N2(FogNode)",
+      "start_time": 875.298343380165,
+      "end_time": 1232.232409873105
+    },
+    {
+      "task_id": "TF90-T0",
+      "taskflow_id": 90,
+      "node_id": "N0(CloudNode)",
+      "start_time": 878.6369309609324,
+      "end_time": 884.718627057394
+    },
+    {
+      "task_id": "TF73-T1",
+      "taskflow_id": 73,
+      "node_id": "N4(FogNode)",
+      "start_time": 878.6369309609324,
+      "end_time": 961.0056671609325
+    },
+    {
+      "task_id": "TF85-T0",
+      "taskflow_id": 85,
+      "node_id": "N0(CloudNode)",
+      "start_time": 884.718627057394,
+      "end_time": 911.2970072198556
+    },
+    {
+      "task_id": "TF64-T1",
+      "taskflow_id": 64,
+      "node_id": "N1(CloudNode)",
+      "start_time": 901.6763712666336,
+      "end_time": 923.9396525781661
+    },
+    {
+      "task_id": "TF88-T0",
+      "taskflow_id": 88,
+      "node_id": "N0(CloudNode)",
+      "start_time": 911.2970072198556,
+      "end_time": 941.3795021798555
+    },
+    {
+      "task_id": "TF68-T2",
+      "taskflow_id": 68,
+      "node_id": "N1(CloudNode)",
+      "start_time": 923.9396525781661,
+      "end_time": 941.2578672692773
+    },
+    {
+      "task_id": "TF64-T2",
+      "taskflow_id": 64,
+      "node_id": "N9(EdgeNode)",
+      "start_time": 923.9396525781661,
+      "end_time": 1151.5081561181662
+    },
+    {
+      "task_id": "TF53-T1",
+      "taskflow_id": 53,
+      "node_id": "N1(CloudNode)",
+      "start_time": 941.2578672692773,
+      "end_time": 981.7452714854076
+    },
+    {
+      "task_id": "TF98-T0",
+      "taskflow_id": 98,
+      "node_id": "N0(CloudNode)",
+      "start_time": 941.3795021798555,
+      "end_time": 947.3837575841633
+    },
+    {
+      "task_id": "TF99-T0",
+      "taskflow_id": 99,
+      "node_id": "N0(CloudNode)",
+      "start_time": 947.3837575841633,
+      "end_time": 951.3561896109325
+    },
+    {
+      "task_id": "TF92-T0",
+      "taskflow_id": 92,
+      "node_id": "N0(CloudNode)",
+      "start_time": 951.3561896109325,
+      "end_time": 972.2015098364709
+    },
+    {
+      "task_id": "TF90-T1",
+      "taskflow_id": 90,
+      "node_id": "N4(FogNode)",
+      "start_time": 961.0056671609325,
+      "end_time": 1011.6278122377864
+    },
+    {
+      "task_id": "TF73-T2",
+      "taskflow_id": 73,
+      "node_id": "N8(EdgeNode)",
+      "start_time": 961.0056671609325,
+      "end_time": 1092.7715983223713
+    },
+    {
+      "task_id": "TF86-T0",
+      "taskflow_id": 86,
+      "node_id": "N0(CloudNode)",
+      "start_time": 972.2015098364709,
+      "end_time": 1006.9962556095478
+    },
+    {
+      "task_id": "TF56-T0",
+      "taskflow_id": 56,
+      "node_id": "N1(CloudNode)",
+      "start_time": 981.7452714854076,
+      "end_time": 1005.3516443777031
+    },
+    {
+      "task_id": "TF48-T0",
+      "taskflow_id": 48,
+      "node_id": "N1(CloudNode)",
+      "start_time": 1005.3516443777031,
+      "end_time": 1068.5834343791316
+    },
+    {
+      "task_id": "TF87-T0",
+      "taskflow_id": 87,
+      "node_id": "N0(CloudNode)",
+      "start_time": 1006.9962556095478,
+      "end_time": 1045.6198773437015
+    },
+    {
+      "task_id": "TF92-T1",
+      "taskflow_id": 92,
+      "node_id": "N0(CloudNode)",
+      "start_time": 1045.6198773437015,
+      "end_time": 1084.9625037650862
+    },
+    {
+      "task_id": "TF87-T1",
+      "taskflow_id": 87,
+      "node_id": "N7(EdgeNode)",
+      "start_time": 1045.6198773437015,
+      "end_time": 1111.5012234488445
+    },
+    {
+      "task_id": "TF75-T0",
+      "taskflow_id": 75,
+      "node_id": "N1(CloudNode)",
+      "start_time": 1068.5834343791316,
+      "end_time": 1086.1558104033222
+    },
+    {
+      "task_id": "TF44-T1",
+      "taskflow_id": 44,
+      "node_id": "N0(CloudNode)",
+      "start_time": 1084.9625037650862,
+      "end_time": 1252.0877818547785
+    },
+    {
+      "task_id": "TF92-T2",
+      "taskflow_id": 92,
+      "node_id": "N4(FogNode)",
+      "start_time": 1084.9625037650862,
+      "end_time": 1230.7808505469045
+    },
+    {
+      "task_id": "TF81-T0",
+      "taskflow_id": 81,
+      "node_id": "N1(CloudNode)",
+      "start_time": 1086.1558104033222,
+      "end_time": 1097.1244762243698
+    },
+    {
+      "task_id": "TF75-T1",
+      "taskflow_id": 75,
+      "node_id": "N1(CloudNode)",
+      "start_time": 1097.1244762243698,
+      "end_time": 1111.910425466719
+    },
+    {
+      "task_id": "TF74-T0",
+      "taskflow_id": 74,
+      "node_id": "N1(CloudNode)",
+      "start_time": 1111.910425466719,
+      "end_time": 1131.6064891368417
+    },
+    {
+      "task_id": "TF75-T2",
+      "taskflow_id": 75,
+      "node_id": "N8(EdgeNode)",
+      "start_time": 1111.910425466719,
+      "end_time": 1620.8775901947192
+    },
+    {
+      "task_id": "TF94-T0",
+      "taskflow_id": 94,
+      "node_id": "N1(CloudNode)",
+      "start_time": 1131.6064891368417,
+      "end_time": 1134.1043076838762
+    },
+    {
+      "task_id": "TF74-T3",
+      "taskflow_id": 74,
+      "node_id": "N7(EdgeNode)",
+      "start_time": 1131.6064891368417,
+      "end_time": 1341.1812040248417
+    },
+    {
+      "task_id": "TF63-T1",
+      "taskflow_id": 63,
+      "node_id": "N1(CloudNode)",
+      "start_time": 1134.1043076838762,
+      "end_time": 1192.616175195654
+    },
+    {
+      "task_id": "TF94-T2",
+      "taskflow_id": 94,
+      "node_id": "N6(EdgeNode)",
+      "start_time": 1134.1043076838762,
+      "end_time": 1213.9440034798492
+    },
+    {
+      "task_id": "TF99-T1",
+      "taskflow_id": 99,
+      "node_id": "N9(EdgeNode)",
+      "start_time": 1151.5081561181662,
+      "end_time": 1516.925770491595
+    },
+    {
+      "task_id": "TF56-T1",
+      "taskflow_id": 56,
+      "node_id": "N1(CloudNode)",
+      "start_time": 1192.616175195654,
+      "end_time": 1231.0758883288604
+    },
+    {
+      "task_id": "TF59-T1",
+      "taskflow_id": 59,
+      "node_id": "N3(FogNode)",
+      "start_time": 1214.4550368902046,
+      "end_time": 1246.801942581938
+    },
+    {
+      "task_id": "TF92-T3",
+      "taskflow_id": 92,
+      "node_id": "N4(FogNode)",
+      "start_time": 1230.7808505469045,
+      "end_time": 5174.170530783269
+    },
+    {
+      "task_id": "TF35-T3",
+      "taskflow_id": 35,
+      "node_id": "N1(CloudNode)",
+      "start_time": 1231.0758883288604,
+      "end_time": 1354.1506400304318
+    },
+    {
+      "task_id": "TF10-T3",
+      "taskflow_id": 10,
+      "node_id": "N2(FogNode)",
+      "start_time": 1232.232409873105,
+      "end_time": 1339.6044870891628
+    },
+    {
+      "task_id": "TF53-T2",
+      "taskflow_id": 53,
+      "node_id": "N5(FogNode)",
+      "start_time": 1243.2849537938405,
+      "end_time": 1331.3990407046965
+    },
+    {
+      "task_id": "TF76-T1",
+      "taskflow_id": 76,
+      "node_id": "N3(FogNode)",
+      "start_time": 1246.801942581938,
+      "end_time": 1332.0777173710496
+    },
+    {
+      "task_id": "TF66-T0",
+      "taskflow_id": 66,
+      "node_id": "N0(CloudNode)",
+      "start_time": 1252.0877818547785,
+      "end_time": 1397.77055872924
+    },
+    {
+      "task_id": "TF98-T1",
+      "taskflow_id": 98,
+      "node_id": "N5(FogNode)",
+      "start_time": 1331.3990407046965,
+      "end_time": 1382.6851749598472
+    },
+    {
+      "task_id": "TF53-T3",
+      "taskflow_id": 53,
+      "node_id": "N6(EdgeNode)",
+      "start_time": 1331.3990407046965,
+      "end_time": 1692.7308522331473
+    },
+    {
+      "task_id": "TF56-T2",
+      "taskflow_id": 56,
+      "node_id": "N3(FogNode)",
+      "start_time": 1332.0777173710496,
+      "end_time": 1643.3691728265867
+    },
+    {
+      "task_id": "TF85-T1",
+      "taskflow_id": 85,
+      "node_id": "N2(FogNode)",
+      "start_time": 1339.6044870891628,
+      "end_time": 1741.7997864057352
+    },
+    {
+      "task_id": "TF95-T0",
+      "taskflow_id": 95,
+      "node_id": "N1(CloudNode)",
+      "start_time": 1354.1506400304318,
+      "end_time": 1400.0224656784317
+    },
+    {
+      "task_id": "TF45-T2",
+      "taskflow_id": 45,
+      "node_id": "N5(FogNode)",
+      "start_time": 1382.6851749598472,
+      "end_time": 2597.883169375486
+    },
+    {
+      "task_id": "TF77-T0",
+      "taskflow_id": 77,
+      "node_id": "N0(CloudNode)",
+      "start_time": 1397.77055872924,
+      "end_time": 1550.9816115860094
+    },
+    {
+      "task_id": "TF35-T1",
+      "taskflow_id": 35,
+      "node_id": "N1(CloudNode)",
+      "start_time": 1400.0224656784317,
+      "end_time": 1477.4331610424317
+    },
+    {
+      "task_id": "TF34-T0",
+      "taskflow_id": 34,
+      "node_id": "N1(CloudNode)",
+      "start_time": 1477.4331610424317,
+      "end_time": 1636.1212779083173
+    },
+    {
+      "task_id": "TF64-T3",
+      "taskflow_id": 64,
+      "node_id": "N9(EdgeNode)",
+      "start_time": 1516.925770491595,
+      "end_time": 1746.6153210968712
+    },
+    {
+      "task_id": "TF16-T0",
+      "taskflow_id": 16,
+      "node_id": "N0(CloudNode)",
+      "start_time": 1550.9816115860094,
+      "end_time": 1735.898965220471
+    },
+    {
+      "task_id": "TF63-T2",
+      "taskflow_id": 63,
+      "node_id": "N8(EdgeNode)",
+      "start_time": 1620.8775901947192,
+      "end_time": 1690.9247854242356
+    },
+    {
+      "task_id": "TF19-T0",
+      "taskflow_id": 19,
+      "node_id": "N1(CloudNode)",
+      "start_time": 1636.1212779083173,
+      "end_time": 1930.7995529428888
+    },
+    {
+      "task_id": "TF34-T2",
+      "taskflow_id": 34,
+      "node_id": "N7(EdgeNode)",
+      "start_time": 1636.1212779083173,
+      "end_time": 1949.5785702194898
+    },
+    {
+      "task_id": "TF76-T2",
+      "taskflow_id": 76,
+      "node_id": "N3(FogNode)",
+      "start_time": 1643.3691728265867,
+      "end_time": 1652.0446715253943
+    },
+    {
+      "task_id": "TF80-T1",
+      "taskflow_id": 80,
+      "node_id": "N3(FogNode)",
+      "start_time": 1652.0446715253943,
+      "end_time": 3266.0285840268098
+    },
+    {
+      "task_id": "TF44-T2",
+      "taskflow_id": 44,
+      "node_id": "N8(EdgeNode)",
+      "start_time": 1690.9247854242356,
+      "end_time": 1800.7316930390964
+    },
+    {
+      "task_id": "TF88-T1",
+      "taskflow_id": 88,
+      "node_id": "N0(CloudNode)",
+      "start_time": 1735.898965220471,
+      "end_time": 1920.8752717296709
+    },
+    {
+      "task_id": "TF35-T2",
+      "taskflow_id": 35,
+      "node_id": "N2(FogNode)",
+      "start_time": 1741.7997864057352,
+      "end_time": 1884.311272327875
+    },
+    {
+      "task_id": "TF75-T3",
+      "taskflow_id": 75,
+      "node_id": "N2(FogNode)",
+      "start_time": 1884.311272327875,
+      "end_time": 2190.020820273349
+    },
+    {
+      "task_id": "TF35-T4",
+      "taskflow_id": 35,
+      "node_id": "N9(EdgeNode)",
+      "start_time": 1884.311272327875,
+      "end_time": 2469.362963155845
+    },
+    {
+      "task_id": "TF8-T1",
+      "taskflow_id": 8,
+      "node_id": "N0(CloudNode)",
+      "start_time": 1920.8752717296709,
+      "end_time": 2439.5200742593634
+    },
+    {
+      "task_id": "TF93-T2",
+      "taskflow_id": 93,
+      "node_id": "N1(CloudNode)",
+      "start_time": 1930.7995529428888,
+      "end_time": 2024.1606025790222
+    },
+    {
+      "task_id": "TF95-T2",
+      "taskflow_id": 95,
+      "node_id": "N1(CloudNode)",
+      "start_time": 2024.1606025790222,
+      "end_time": 2069.454122768356
+    },
+    {
+      "task_id": "TF27-T0",
+      "taskflow_id": 27,
+      "node_id": "N1(CloudNode)",
+      "start_time": 2069.454122768356,
+      "end_time": 2248.5165927683556
+    },
+    {
+      "task_id": "TF10-T4",
+      "taskflow_id": 10,
+      "node_id": "N2(FogNode)",
+      "start_time": 2190.020820273349,
+      "end_time": 2836.5884959066298
+    },
+    {
+      "task_id": "TF74-T1",
+      "taskflow_id": 74,
+      "node_id": "N1(CloudNode)",
+      "start_time": 2248.5165927683556,
+      "end_time": 2438.140427952935
+    },
+    {
+      "task_id": "TF94-T1",
+      "taskflow_id": 94,
+      "node_id": "N1(CloudNode)",
+      "start_time": 2438.140427952935,
+      "end_time": 2729.1551848205017
+    },
+    {
+      "task_id": "TF74-T2",
+      "taskflow_id": 74,
+      "node_id": "N7(EdgeNode)",
+      "start_time": 2438.140427952935,
+      "end_time": 2513.986515245735
+    },
+    {
+      "task_id": "TF13-T0",
+      "taskflow_id": 13,
+      "node_id": "N0(CloudNode)",
+      "start_time": 2439.5200742593634,
+      "end_time": 2829.8095313064405
+    },
+    {
+      "task_id": "TF27-T1",
+      "taskflow_id": 27,
+      "node_id": "N9(EdgeNode)",
+      "start_time": 2469.362963155845,
+      "end_time": 3671.1868427148584
+    },
+    {
+      "task_id": "TF74-T4",
+      "taskflow_id": 74,
+      "node_id": "N7(EdgeNode)",
+      "start_time": 2513.986515245735,
+      "end_time": 2925.152146359335
+    },
+    {
+      "task_id": "TF53-T4",
+      "taskflow_id": 53,
+      "node_id": "N5(FogNode)",
+      "start_time": 2597.883169375486,
+      "end_time": 2747.324556401787
+    },
+    {
+      "task_id": "TF33-T1",
+      "taskflow_id": 33,
+      "node_id": "N1(CloudNode)",
+      "start_time": 2729.1551848205017,
+      "end_time": 3066.483984010748
+    },
+    {
+      "task_id": "TF94-T3",
+      "taskflow_id": 94,
+      "node_id": "N6(EdgeNode)",
+      "start_time": 2729.1551848205017,
+      "end_time": 2791.030949062381
+    },
+    {
+      "task_id": "TF98-T2",
+      "taskflow_id": 98,
+      "node_id": "N5(FogNode)",
+      "start_time": 2747.324556401787,
+      "end_time": 2888.6605152536545
+    },
+    {
+      "task_id": "TF94-T4",
+      "taskflow_id": 94,
+      "node_id": "N6(EdgeNode)",
+      "start_time": 2791.030949062381,
+      "end_time": 3266.5856177104347
+    },
+    {
+      "task_id": "TF78-T0",
+      "taskflow_id": 78,
+      "node_id": "N0(CloudNode)",
+      "start_time": 2829.8095313064405,
+      "end_time": 3078.0537813824403
+    },
+    {
+      "task_id": "TF13-T1",
+      "taskflow_id": 13,
+      "node_id": "N2(FogNode)",
+      "start_time": 2836.5884959066298,
+      "end_time": 3432.5996118007088
+    },
+    {
+      "task_id": "TF48-T3",
+      "taskflow_id": 48,
+      "node_id": "N5(FogNode)",
+      "start_time": 2888.6605152536545,
+      "end_time": 4232.553728578357
+    },
+    {
+      "task_id": "TF83-T0",
+      "taskflow_id": 83,
+      "node_id": "N1(CloudNode)",
+      "start_time": 3066.483984010748,
+      "end_time": 3351.274068560947
+    },
+    {
+      "task_id": "TF33-T2",
+      "taskflow_id": 33,
+      "node_id": "N7(EdgeNode)",
+      "start_time": 3066.483984010748,
+      "end_time": 5288.1205760850335
+    },
+    {
+      "task_id": "TF57-T0",
+      "taskflow_id": 57,
+      "node_id": "N0(CloudNode)",
+      "start_time": 3078.0537813824403,
+      "end_time": 3356.744467062594
+    },
+    {
+      "task_id": "TF16-T2",
+      "taskflow_id": 16,
+      "node_id": "N3(FogNode)",
+      "start_time": 3266.0285840268098,
+      "end_time": 4182.896837155161
+    },
+    {
+      "task_id": "TF68-T1",
+      "taskflow_id": 68,
+      "node_id": "N1(CloudNode)",
+      "start_time": 3351.274068560947,
+      "end_time": 3531.999829948947
+    },
+    {
+      "task_id": "TF91-T0",
+      "taskflow_id": 91,
+      "node_id": "N0(CloudNode)",
+      "start_time": 3356.744467062594,
+      "end_time": 3584.692827910748
+    },
+    {
+      "task_id": "TF11-T2",
+      "taskflow_id": 11,
+      "node_id": "N2(FogNode)",
+      "start_time": 3432.5996118007088,
+      "end_time": 4366.327885083408
+    },
+    {
+      "task_id": "TF40-T0",
+      "taskflow_id": 40,
+      "node_id": "N1(CloudNode)",
+      "start_time": 3531.999829948947,
+      "end_time": 3907.3443897491693
+    },
+    {
+      "task_id": "TF39-T0",
+      "taskflow_id": 39,
+      "node_id": "N0(CloudNode)",
+      "start_time": 3584.692827910748,
+      "end_time": 3898.488634311979
+    },
+    {
+      "task_id": "TF68-T3",
+      "taskflow_id": 68,
+      "node_id": "N9(EdgeNode)",
+      "start_time": 3671.1868427148584,
+      "end_time": 3797.3311133245347
+    },
+    {
+      "task_id": "TF27-T2",
+      "taskflow_id": 27,
+      "node_id": "N9(EdgeNode)",
+      "start_time": 3797.3311133245347,
+      "end_time": 3917.1344643190373
+    },
+    {
+      "task_id": "TF71-T0",
+      "taskflow_id": 71,
+      "node_id": "N0(CloudNode)",
+      "start_time": 3898.488634311979,
+      "end_time": 4171.69970232044
+    },
+    {
+      "task_id": "TF29-T0",
+      "taskflow_id": 29,
+      "node_id": "N1(CloudNode)",
+      "start_time": 3907.3443897491693,
+      "end_time": 4523.083694657424
+    },
+    {
+      "task_id": "TF78-T1",
+      "taskflow_id": 78,
+      "node_id": "N9(EdgeNode)",
+      "start_time": 3917.1344643190373,
+      "end_time": 4262.518365725434
+    },
+    {
+      "task_id": "TF79-T0",
+      "taskflow_id": 79,
+      "node_id": "N0(CloudNode)",
+      "start_time": 4171.69970232044,
+      "end_time": 4460.362790175979
+    },
+    {
+      "task_id": "TF40-T1",
+      "taskflow_id": 40,
+      "node_id": "N3(FogNode)",
+      "start_time": 4182.896837155161,
+      "end_time": 5047.438315516232
+    },
+    {
+      "task_id": "TF48-T1",
+      "taskflow_id": 48,
+      "node_id": "N5(FogNode)",
+      "start_time": 4232.553728578357,
+      "end_time": 7051.450356877116
+    },
+    {
+      "task_id": "TF71-T1",
+      "taskflow_id": 71,
+      "node_id": "N9(EdgeNode)",
+      "start_time": 4262.518365725434,
+      "end_time": 4673.872618648199
+    },
+    {
+      "task_id": "TF39-T1",
+      "taskflow_id": 39,
+      "node_id": "N2(FogNode)",
+      "start_time": 4366.327885083408,
+      "end_time": 4902.918605260896
+    },
+    {
+      "task_id": "TF54-T0",
+      "taskflow_id": 54,
+      "node_id": "N0(CloudNode)",
+      "start_time": 4460.362790175979,
+      "end_time": 4804.301697296287
+    },
+    {
+      "task_id": "TF17-T3",
+      "taskflow_id": 17,
+      "node_id": "N1(CloudNode)",
+      "start_time": 4523.083694657424,
+      "end_time": 5248.409483851138
+    },
+    {
+      "task_id": "TF29-T3",
+      "taskflow_id": 29,
+      "node_id": "N6(EdgeNode)",
+      "start_time": 4523.083694657424,
+      "end_time": 4730.685292059907
+    },
+    {
+      "task_id": "TF27-T3",
+      "taskflow_id": 27,
+      "node_id": "N9(EdgeNode)",
+      "start_time": 4673.872618648199,
+      "end_time": 6354.673221643914
+    },
+    {
+      "task_id": "TF36-T0",
+      "taskflow_id": 36,
+      "node_id": "N0(CloudNode)",
+      "start_time": 4804.301697296287,
+      "end_time": 5096.433393545056
+    },
+    {
+      "task_id": "TF11-T3",
+      "taskflow_id": 11,
+      "node_id": "N2(FogNode)",
+      "start_time": 4902.918605260896,
+      "end_time": 5368.249988862911
+    },
+    {
+      "task_id": "TF81-T3",
+      "taskflow_id": 81,
+      "node_id": "N3(FogNode)",
+      "start_time": 5047.438315516232,
+      "end_time": 7040.497697708922
+    },
+    {
+      "task_id": "TF77-T1",
+      "taskflow_id": 77,
+      "node_id": "N0(CloudNode)",
+      "start_time": 5096.433393545056,
+      "end_time": 5617.0916540707485
+    },
+    {
+      "task_id": "TF36-T2",
+      "taskflow_id": 36,
+      "node_id": "N8(EdgeNode)",
+      "start_time": 5096.433393545056,
+      "end_time": 5684.620892875258
+    },
+    {
+      "task_id": "TF88-T2",
+      "taskflow_id": 88,
+      "node_id": "N4(FogNode)",
+      "start_time": 5174.170530783269,
+      "end_time": 6040.103974720541
+    },
+    {
+      "task_id": "TF62-T1",
+      "taskflow_id": 62,
+      "node_id": "N1(CloudNode)",
+      "start_time": 5248.409483851138,
+      "end_time": 5988.393716914931
+    },
+    {
+      "task_id": "TF80-T2",
+      "taskflow_id": 80,
+      "node_id": "N7(EdgeNode)",
+      "start_time": 5288.1205760850335,
+      "end_time": 5745.976869415796
+    },
+    {
+      "task_id": "TF13-T2",
+      "taskflow_id": 13,
+      "node_id": "N2(FogNode)",
+      "start_time": 5368.249988862911,
+      "end_time": 6639.596319269404
+    },
+    {
+      "task_id": "TF2-T0",
+      "taskflow_id": 2,
+      "node_id": "N0(CloudNode)",
+      "start_time": 5617.0916540707485,
+      "end_time": 5932.380259901364
+    },
+    {
+      "task_id": "TF33-T4",
+      "taskflow_id": 33,
+      "node_id": "N7(EdgeNode)",
+      "start_time": 5745.976869415796,
+      "end_time": 7043.580479326292
+    },
+    {
+      "task_id": "TF65-T0",
+      "taskflow_id": 65,
+      "node_id": "N0(CloudNode)",
+      "start_time": 5932.380259901364,
+      "end_time": 6337.546900353364
+    },
+    {
+      "task_id": "TF6-T3",
+      "taskflow_id": 6,
+      "node_id": "N1(CloudNode)",
+      "start_time": 5988.393716914931,
+      "end_time": 6617.80598287169
+    },
+    {
+      "task_id": "TF62-T3",
+      "taskflow_id": 62,
+      "node_id": "N8(EdgeNode)",
+      "start_time": 5988.393716914931,
+      "end_time": 6036.303988608358
+    },
+    {
+      "task_id": "TF63-T3",
+      "taskflow_id": 63,
+      "node_id": "N4(FogNode)",
+      "start_time": 6040.103974720541,
+      "end_time": 7698.912341285477
+    },
+    {
+      "task_id": "TF88-T3",
+      "taskflow_id": 88,
+      "node_id": "N8(EdgeNode)",
+      "start_time": 6040.103974720541,
+      "end_time": 6107.972193943555
+    },
+    {
+      "task_id": "TF96-T0",
+      "taskflow_id": 96,
+      "node_id": "N0(CloudNode)",
+      "start_time": 6337.546900353364,
+      "end_time": 6879.516043526595
+    },
+    {
+      "task_id": "TF71-T2",
+      "taskflow_id": 71,
+      "node_id": "N9(EdgeNode)",
+      "start_time": 6354.673221643914,
+      "end_time": 6421.09471470299
+    },
+    {
+      "task_id": "TF40-T2",
+      "taskflow_id": 40,
+      "node_id": "N9(EdgeNode)",
+      "start_time": 6421.09471470299,
+      "end_time": 6748.459661124733
+    },
+    {
+      "task_id": "TF62-T0",
+      "taskflow_id": 62,
+      "node_id": "N1(CloudNode)",
+      "start_time": 6617.80598287169,
+      "end_time": 7154.285375748931
+    },
+    {
+      "task_id": "TF79-T1",
+      "taskflow_id": 79,
+      "node_id": "N2(FogNode)",
+      "start_time": 6639.596319269404,
+      "end_time": 11176.631447809708
+    },
+    {
+      "task_id": "TF6-T4",
+      "taskflow_id": 6,
+      "node_id": "N9(EdgeNode)",
+      "start_time": 6748.459661124733,
+      "end_time": 7219.618980397324
+    },
+    {
+      "task_id": "TF18-T0",
+      "taskflow_id": 18,
+      "node_id": "N0(CloudNode)",
+      "start_time": 6879.516043526595,
+      "end_time": 7429.205993098595
+    },
+    {
+      "task_id": "TF96-T1",
+      "taskflow_id": 96,
+      "node_id": "N6(EdgeNode)",
+      "start_time": 6879.516043526595,
+      "end_time": 7009.270014843262
+    },
+    {
+      "task_id": "TF96-T2",
+      "taskflow_id": 96,
+      "node_id": "N6(EdgeNode)",
+      "start_time": 7009.270014843262,
+      "end_time": 7137.027771216595
+    },
+    {
+      "task_id": "TF5-T4",
+      "taskflow_id": 5,
+      "node_id": "N3(FogNode)",
+      "start_time": 7040.497697708922,
+      "end_time": 10879.613332915285
+    },
+    {
+      "task_id": "TF65-T3",
+      "taskflow_id": 65,
+      "node_id": "N7(EdgeNode)",
+      "start_time": 7043.580479326292,
+      "end_time": 7311.471542184406
+    },
+    {
+      "task_id": "TF29-T4",
+      "taskflow_id": 29,
+      "node_id": "N5(FogNode)",
+      "start_time": 7051.450356877116,
+      "end_time": 8302.881872787875
+    },
+    {
+      "task_id": "TF93-T0",
+      "taskflow_id": 93,
+      "node_id": "N1(CloudNode)",
+      "start_time": 7154.285375748931,
+      "end_time": 7668.972660208241
+    },
+    {
+      "task_id": "TF62-T2",
+      "taskflow_id": 62,
+      "node_id": "N8(EdgeNode)",
+      "start_time": 7154.285375748931,
+      "end_time": 7242.120873853546
+    },
+    {
+      "task_id": "TF40-T3",
+      "taskflow_id": 40,
+      "node_id": "N9(EdgeNode)",
+      "start_time": 7219.618980397324,
+      "end_time": 7943.8662897062095
+    },
+    {
+      "task_id": "TF62-T4",
+      "taskflow_id": 62,
+      "node_id": "N8(EdgeNode)",
+      "start_time": 7242.120873853546,
+      "end_time": 8689.045806261938
+    },
+    {
+      "task_id": "TF47-T0",
+      "taskflow_id": 47,
+      "node_id": "N0(CloudNode)",
+      "start_time": 7429.205993098595,
+      "end_time": 7911.865054862441
+    },
+    {
+      "task_id": "TF17-T0",
+      "taskflow_id": 17,
+      "node_id": "N1(CloudNode)",
+      "start_time": 7668.972660208241,
+      "end_time": 8353.51256635424
+    },
+    {
+      "task_id": "TF54-T1",
+      "taskflow_id": 54,
+      "node_id": "N4(FogNode)",
+      "start_time": 7698.912341285477,
+      "end_time": 13666.62750299399
+    },
+    {
+      "task_id": "TF52-T0",
+      "taskflow_id": 52,
+      "node_id": "N0(CloudNode)",
+      "start_time": 7911.865054862441,
+      "end_time": 8395.07232326521
+    },
+    {
+      "task_id": "TF47-T1",
+      "taskflow_id": 47,
+      "node_id": "N7(EdgeNode)",
+      "start_time": 7911.865054862441,
+      "end_time": 11870.5061895797
+    },
+    {
+      "task_id": "TF93-T1",
+      "taskflow_id": 93,
+      "node_id": "N9(EdgeNode)",
+      "start_time": 7943.8662897062095,
+      "end_time": 8415.439687078566
+    },
+    {
+      "task_id": "TF77-T2",
+      "taskflow_id": 77,
+      "node_id": "N5(FogNode)",
+      "start_time": 8302.881872787875,
+      "end_time": 9844.410969277085
+    },
+    {
+      "task_id": "TF37-T1",
+      "taskflow_id": 37,
+      "node_id": "N1(CloudNode)",
+      "start_time": 8353.51256635424,
+      "end_time": 9020.30141297424
+    },
+    {
+      "task_id": "TF25-T3",
+      "taskflow_id": 25,
+      "node_id": "N0(CloudNode)",
+      "start_time": 8395.07232326521,
+      "end_time": 9021.876979468749
+    },
+    {
+      "task_id": "TF58-T3",
+      "taskflow_id": 58,
+      "node_id": "N1(CloudNode)",
+      "start_time": 9020.30141297424,
+      "end_time": 9707.613755006323
+    },
+    {
+      "task_id": "TF37-T2",
+      "taskflow_id": 37,
+      "node_id": "N6(EdgeNode)",
+      "start_time": 9020.30141297424,
+      "end_time": 9686.513280524241
+    },
+    {
+      "task_id": "TF84-T0",
+      "taskflow_id": 84,
+      "node_id": "N0(CloudNode)",
+      "start_time": 9021.876979468749,
+      "end_time": 9376.868479288594
+    },
+    {
+      "task_id": "TF46-T0",
+      "taskflow_id": 46,
+      "node_id": "N0(CloudNode)",
+      "start_time": 9376.868479288594,
+      "end_time": 10063.092490921672
+    },
+    {
+      "task_id": "TF58-T2",
+      "taskflow_id": 58,
+      "node_id": "N1(CloudNode)",
+      "start_time": 9707.613755006323,
+      "end_time": 10696.037628917979
+    },
+    {
+      "task_id": "TF37-T3",
+      "taskflow_id": 37,
+      "node_id": "N5(FogNode)",
+      "start_time": 9844.410969277085,
+      "end_time": 11199.033906522674
+    },
+    {
+      "task_id": "TF41-T0",
+      "taskflow_id": 41,
+      "node_id": "N0(CloudNode)",
+      "start_time": 10063.092490921672,
+      "end_time": 10650.928256218134
+    },
+    {
+      "task_id": "TF97-T0",
+      "taskflow_id": 97,
+      "node_id": "N0(CloudNode)",
+      "start_time": 10650.928256218134,
+      "end_time": 11499.928623592596
+    },
+    {
+      "task_id": "TF41-T1",
+      "taskflow_id": 41,
+      "node_id": "N6(EdgeNode)",
+      "start_time": 10650.928256218134,
+      "end_time": 13313.582111013839
+    },
+    {
+      "task_id": "TF81-T1",
+      "taskflow_id": 81,
+      "node_id": "N1(CloudNode)",
+      "start_time": 10696.037628917979,
+      "end_time": 12169.430278208029
+    },
+    {
+      "task_id": "TF18-T1",
+      "taskflow_id": 18,
+      "node_id": "N3(FogNode)",
+      "start_time": 10879.613332915285,
+      "end_time": 12226.20370375043
+    },
+    {
+      "task_id": "TF58-T4",
+      "taskflow_id": 58,
+      "node_id": "N2(FogNode)",
+      "start_time": 11176.631447809708,
+      "end_time": 14666.878942759904
+    },
+    {
+      "task_id": "TF34-T3",
+      "taskflow_id": 34,
+      "node_id": "N5(FogNode)",
+      "start_time": 11199.033906522674,
+      "end_time": 15375.844571047572
+    },
+    {
+      "task_id": "TF99-T2",
+      "taskflow_id": 99,
+      "node_id": "N0(CloudNode)",
+      "start_time": 11499.928623592596,
+      "end_time": 12009.501845911365
+    },
+    {
+      "task_id": "TF52-T1",
+      "taskflow_id": 52,
+      "node_id": "N7(EdgeNode)",
+      "start_time": 11870.5061895797,
+      "end_time": 12265.479244292668
+    },
+    {
+      "task_id": "TF70-T0",
+      "taskflow_id": 70,
+      "node_id": "N0(CloudNode)",
+      "start_time": 12009.501845911365,
+      "end_time": 13124.292748883674
+    },
+    {
+      "task_id": "TF99-T3",
+      "taskflow_id": 99,
+      "node_id": "N9(EdgeNode)",
+      "start_time": 12009.501845911365,
+      "end_time": 14522.975020043938
+    },
+    {
+      "task_id": "TF38-T0",
+      "taskflow_id": 38,
+      "node_id": "N1(CloudNode)",
+      "start_time": 12169.430278208029,
+      "end_time": 13497.471246185172
+    },
+    {
+      "task_id": "TF93-T3",
+      "taskflow_id": 93,
+      "node_id": "N3(FogNode)",
+      "start_time": 12226.20370375043,
+      "end_time": 17247.513217904227
+    },
+    {
+      "task_id": "TF84-T1",
+      "taskflow_id": 84,
+      "node_id": "N7(EdgeNode)",
+      "start_time": 12265.479244292668,
+      "end_time": 12738.72292551938
+    },
+    {
+      "task_id": "TF52-T2",
+      "taskflow_id": 52,
+      "node_id": "N7(EdgeNode)",
+      "start_time": 12738.72292551938,
+      "end_time": 19649.007023884085
+    },
+    {
+      "task_id": "TF44-T3",
+      "taskflow_id": 44,
+      "node_id": "N0(CloudNode)",
+      "start_time": 13124.292748883674,
+      "end_time": 13791.894569726443
+    },
+    {
+      "task_id": "TF41-T2",
+      "taskflow_id": 41,
+      "node_id": "N6(EdgeNode)",
+      "start_time": 13313.582111013839,
+      "end_time": 13533.996287732336
+    },
+    {
+      "task_id": "TF50-T0",
+      "taskflow_id": 50,
+      "node_id": "N1(CloudNode)",
+      "start_time": 13497.471246185172,
+      "end_time": 14564.950967340372
+    },
+    {
+      "task_id": "TF47-T2",
+      "taskflow_id": 47,
+      "node_id": "N4(FogNode)",
+      "start_time": 13666.62750299399,
+      "end_time": 15532.13652344319
+    },
+    {
+      "task_id": "TF60-T1",
+      "taskflow_id": 60,
+      "node_id": "N0(CloudNode)",
+      "start_time": 13791.894569726443,
+      "end_time": 15017.00864588195
+    },
+    {
+      "task_id": "TF56-T3",
+      "taskflow_id": 56,
+      "node_id": "N1(CloudNode)",
+      "start_time": 14564.950967340372,
+      "end_time": 15944.043498192943
+    },
+    {
+      "task_id": "TF97-T1",
+      "taskflow_id": 97,
+      "node_id": "N2(FogNode)",
+      "start_time": 14666.878942759904,
+      "end_time": 15863.357895403438
+    },
+    {
+      "task_id": "TF28-T0",
+      "taskflow_id": 28,
+      "node_id": "N0(CloudNode)",
+      "start_time": 15017.00864588195,
+      "end_time": 16944.43033898872
+    },
+    {
+      "task_id": "TF60-T2",
+      "taskflow_id": 60,
+      "node_id": "N6(EdgeNode)",
+      "start_time": 15017.00864588195,
+      "end_time": 15713.100978923561
+    },
+    {
+      "task_id": "TF37-T4",
+      "taskflow_id": 37,
+      "node_id": "N5(FogNode)",
+      "start_time": 15375.844571047572,
+      "end_time": 16752.277396947225
+    },
+    {
+      "task_id": "TF17-T2",
+      "taskflow_id": 17,
+      "node_id": "N4(FogNode)",
+      "start_time": 15532.13652344319,
+      "end_time": 18169.908071909686
+    },
+    {
+      "task_id": "TF9-T1",
+      "taskflow_id": 9,
+      "node_id": "N1(CloudNode)",
+      "start_time": 15944.043498192943,
+      "end_time": 18813.363445048468
+    },
+    {
+      "task_id": "TF41-T3",
+      "taskflow_id": 41,
+      "node_id": "N5(FogNode)",
+      "start_time": 16752.277396947225,
+      "end_time": 20160.363021813053
+    },
+    {
+      "task_id": "TF23-T2",
+      "taskflow_id": 23,
+      "node_id": "N0(CloudNode)",
+      "start_time": 16944.43033898872,
+      "end_time": 18275.12038207149
+    },
+    {
+      "task_id": "TF81-T2",
+      "taskflow_id": 81,
+      "node_id": "N3(FogNode)",
+      "start_time": 17247.513217904227,
+      "end_time": 22716.265461023686
+    },
+    {
+      "task_id": "TF95-T1",
+      "taskflow_id": 95,
+      "node_id": "N1(CloudNode)",
+      "start_time": 18813.363445048468,
+      "end_time": 21251.29063679828
+    },
+    {
+      "task_id": "TF9-T2",
+      "taskflow_id": 9,
+      "node_id": "N6(EdgeNode)",
+      "start_time": 18813.363445048468,
+      "end_time": 20142.69438005142
+    },
+    {
+      "task_id": "TF17-T4",
+      "taskflow_id": 17,
+      "node_id": "N7(EdgeNode)",
+      "start_time": 19649.007023884085,
+      "end_time": 19723.66575382741
+    },
+    {
+      "task_id": "TF56-T4",
+      "taskflow_id": 56,
+      "node_id": "N7(EdgeNode)",
+      "start_time": 19723.66575382741,
+      "end_time": 19891.389639975532
+    },
+    {
+      "task_id": "TF50-T1",
+      "taskflow_id": 50,
+      "node_id": "N7(EdgeNode)",
+      "start_time": 19891.389639975532,
+      "end_time": 20384.999442930133
+    },
+    {
+      "task_id": "TF9-T3",
+      "taskflow_id": 9,
+      "node_id": "N6(EdgeNode)",
+      "start_time": 20142.69438005142,
+      "end_time": 20615.74457764256
+    },
+    {
+      "task_id": "TF34-T4",
+      "taskflow_id": 34,
+      "node_id": "N5(FogNode)",
+      "start_time": 20160.363021813053,
+      "end_time": 23672.79804605369
+    },
+    {
+      "task_id": "TF38-T2",
+      "taskflow_id": 38,
+      "node_id": "N7(EdgeNode)",
+      "start_time": 20384.999442930133,
+      "end_time": 29376.96519543154
+    },
+    {
+      "task_id": "TF61-T1",
+      "taskflow_id": 61,
+      "node_id": "N1(CloudNode)",
+      "start_time": 21251.29063679828,
+      "end_time": 24317.38337409933
+    },
+    {
+      "task_id": "TF84-T2",
+      "taskflow_id": 84,
+      "node_id": "N3(FogNode)",
+      "start_time": 22716.265461023686,
+      "end_time": 32460.329440523063
+    },
+    {
+      "task_id": "TF81-T4",
+      "taskflow_id": 81,
+      "node_id": "N9(EdgeNode)",
+      "start_time": 22716.265461023686,
+      "end_time": 23443.281507060306
+    },
+    {
+      "task_id": "TF48-T4",
+      "taskflow_id": 48,
+      "node_id": "N5(FogNode)",
+      "start_time": 23672.79804605369,
+      "end_time": 30564.533092786427
+    },
+    {
+      "task_id": "TF83-T1",
+      "taskflow_id": 83,
+      "node_id": "N1(CloudNode)",
+      "start_time": 24317.38337409933,
+      "end_time": 40439.04206892133
+    },
+    {
+      "task_id": "TF61-T2",
+      "taskflow_id": 61,
+      "node_id": "N9(EdgeNode)",
+      "start_time": 24317.38337409933,
+      "end_time": 31778.40294623302
+    },
+    {
+      "task_id": "TF50-T2",
+      "taskflow_id": 50,
+      "node_id": "N7(EdgeNode)",
+      "start_time": 29376.96519543154,
+      "end_time": 30844.923583274613
+    },
+    {
+      "task_id": "TF38-T3",
+      "taskflow_id": 38,
+      "node_id": "N7(EdgeNode)",
+      "start_time": 30844.923583274613,
+      "end_time": 31194.68840305364
+    },
+    {
+      "task_id": "TF95-T3",
+      "taskflow_id": 95,
+      "node_id": "N7(EdgeNode)",
+      "start_time": 31194.68840305364,
+      "end_time": 33868.963219713405
+    },
+    {
+      "task_id": "TF61-T3",
+      "taskflow_id": 61,
+      "node_id": "N9(EdgeNode)",
+      "start_time": 31778.40294623302,
+      "end_time": 32412.487054204834
+    },
+    {
+      "task_id": "TF50-T3",
+      "taskflow_id": 50,
+      "node_id": "N7(EdgeNode)",
+      "start_time": 33868.963219713405,
+      "end_time": 36819.90975200972
+    },
+    {
+      "task_id": "TF95-T4",
+      "taskflow_id": 95,
+      "node_id": "N7(EdgeNode)",
+      "start_time": 36819.90975200972,
+      "end_time": 37950.28354593453
+    },
+    {
+      "task_id": "TF83-T2",
+      "taskflow_id": 83,
+      "node_id": "N8(EdgeNode)",
+      "start_time": 40439.04206892133,
+      "end_time": 41161.65532141843
+    },
+    {
+      "task_id": "TF83-T3",
+      "taskflow_id": 83,
+      "node_id": "N8(EdgeNode)",
+      "start_time": 41161.65532141843,
+      "end_time": 49994.70405705292
+    }
+  ],
+  "node_assignment_log": {
+    "N0(CloudNode)": [
+      "TF0-T0",
+      "TF0-T1",
+      "TF1-T0",
+      "TF2-T0",
+      "TF3-T0",
+      "TF4-T0",
+      "TF0-T2",
+      "TF7-T0",
+      "TF8-T0",
+      "TF1-T1",
+      "TF0-T3",
+      "TF13-T0",
+      "TF14-T0",
+      "TF15-T0",
+      "TF16-T0",
+      "TF16-T1",
+      "TF18-T0",
+      "TF21-T0",
+      "TF22-T0",
+      "TF23-T0",
+      "TF23-T1",
+      "TF24-T0",
+      "TF24-T2",
+      "TF25-T0",
+      "TF25-T1",
+      "TF25-T2",
+      "TF26-T0",
+      "TF28-T0",
+      "TF31-T0",
+      "TF32-T0",
+      "TF36-T0",
+      "TF36-T1",
+      "TF39-T0",
+      "TF41-T0",
+      "TF43-T0",
+      "TF44-T0",
+      "TF44-T1",
+      "TF8-T1",
+      "TF45-T0",
+      "TF45-T1",
+      "TF46-T0",
+      "TF47-T0",
+      "TF49-T0",
+      "TF51-T0",
+      "TF52-T0",
+      "TF54-T0",
+      "TF55-T0",
+      "TF57-T0",
+      "TF59-T0",
+      "TF60-T0",
+      "TF65-T0",
+      "TF65-T1",
+      "TF66-T0",
+      "TF67-T0",
+      "TF24-T1",
+      "TF70-T0",
+      "TF71-T0",
+      "TF72-T0",
+      "TF73-T0",
+      "TF76-T0",
+      "TF77-T0",
+      "TF77-T1",
+      "TF78-T0",
+      "TF79-T0",
+      "TF80-T0",
+      "TF82-T0",
+      "TF84-T0",
+      "TF85-T0",
+      "TF86-T0",
+      "TF87-T0",
+      "TF88-T0",
+      "TF88-T1",
+      "TF89-T0",
+      "TF90-T0",
+      "TF91-T0",
+      "TF92-T0",
+      "TF92-T1",
+      "TF96-T0",
+      "TF97-T0",
+      "TF23-T2",
+      "TF98-T0",
+      "TF99-T0",
+      "TF25-T3",
+      "TF60-T1",
+      "TF99-T2",
+      "TF44-T3"
+    ],
+    "N1(CloudNode)": [
+      "TF5-T0",
+      "TF5-T1",
+      "TF6-T0",
+      "TF6-T1",
+      "TF9-T0",
+      "TF10-T0",
+      "TF10-T1",
+      "TF11-T0",
+      "TF12-T0",
+      "TF12-T1",
+      "TF17-T0",
+      "TF17-T1",
+      "TF17-T3",
+      "TF19-T0",
+      "TF20-T0",
+      "TF27-T0",
+      "TF29-T0",
+      "TF29-T1",
+      "TF30-T0",
+      "TF30-T1",
+      "TF30-T2",
+      "TF30-T3",
+      "TF33-T0",
+      "TF33-T1",
+      "TF34-T0",
+      "TF34-T1",
+      "TF35-T0",
+      "TF35-T1",
+      "TF35-T3",
+      "TF37-T0",
+      "TF37-T1",
+      "TF38-T0",
+      "TF38-T1",
+      "TF40-T0",
+      "TF42-T0",
+      "TF48-T0",
+      "TF48-T2",
+      "TF50-T0",
+      "TF53-T0",
+      "TF53-T1",
+      "TF56-T0",
+      "TF56-T1",
+      "TF58-T0",
+      "TF58-T1",
+      "TF58-T2",
+      "TF61-T0",
+      "TF62-T0",
+      "TF62-T1",
+      "TF63-T0",
+      "TF63-T1",
+      "TF64-T0",
+      "TF64-T1",
+      "TF68-T0",
+      "TF68-T2",
+      "TF69-T0",
+      "TF74-T0",
+      "TF74-T1",
+      "TF75-T0",
+      "TF75-T1",
+      "TF81-T0",
+      "TF81-T1",
+      "TF83-T0",
+      "TF93-T0",
+      "TF93-T2",
+      "TF94-T0",
+      "TF94-T1",
+      "TF95-T0",
+      "TF95-T1",
+      "TF95-T2",
+      "TF9-T1",
+      "TF6-T3",
+      "TF68-T1",
+      "TF61-T1",
+      "TF58-T3",
+      "TF56-T3",
+      "TF83-T1"
+    ],
+    "N5(FogNode)": [
+      "TF3-T1",
+      "TF7-T1",
+      "TF7-T2",
+      "TF22-T1",
+      "TF4-T1",
+      "TF21-T1",
+      "TF30-T4",
+      "TF29-T2",
+      "TF45-T2",
+      "TF98-T1",
+      "TF53-T2",
+      "TF48-T3",
+      "TF48-T1",
+      "TF98-T2",
+      "TF34-T3",
+      "TF53-T4",
+      "TF29-T4",
+      "TF77-T2",
+      "TF48-T4",
+      "TF37-T3",
+      "TF37-T4",
+      "TF41-T3",
+      "TF34-T4"
+    ],
+    "N4(FogNode)": [
+      "TF26-T1",
+      "TF6-T2",
+      "TF73-T1",
+      "TF90-T1",
+      "TF92-T2",
+      "TF92-T3",
+      "TF63-T3",
+      "TF88-T2",
+      "TF54-T1",
+      "TF17-T2",
+      "TF47-T2"
+    ],
+    "N2(FogNode)": [
+      "TF15-T1",
+      "TF11-T1",
+      "TF12-T2",
+      "TF11-T2",
+      "TF10-T2",
+      "TF12-T3",
+      "TF10-T3",
+      "TF85-T1",
+      "TF10-T4",
+      "TF35-T2",
+      "TF75-T3",
+      "TF13-T1",
+      "TF13-T2",
+      "TF39-T1",
+      "TF11-T3",
+      "TF79-T1",
+      "TF58-T4",
+      "TF97-T1"
+    ],
+    "N3(FogNode)": [
+      "TF5-T3",
+      "TF5-T2",
+      "TF51-T1",
+      "TF59-T1",
+      "TF76-T1",
+      "TF80-T1",
+      "TF81-T3",
+      "TF5-T4",
+      "TF56-T2",
+      "TF76-T2",
+      "TF16-T2",
+      "TF40-T1",
+      "TF18-T1",
+      "TF93-T3",
+      "TF81-T2",
+      "TF84-T2"
+    ],
+    "N7(EdgeNode)": [
+      "TF65-T2",
+      "TF33-T3",
+      "TF20-T1",
+      "TF87-T1",
+      "TF74-T3",
+      "TF34-T2",
+      "TF74-T2",
+      "TF74-T4",
+      "TF33-T2",
+      "TF80-T2",
+      "TF33-T4",
+      "TF65-T3",
+      "TF47-T1",
+      "TF52-T1",
+      "TF84-T1",
+      "TF52-T2",
+      "TF38-T2",
+      "TF50-T1",
+      "TF56-T4",
+      "TF17-T4",
+      "TF50-T2",
+      "TF95-T3",
+      "TF38-T3",
+      "TF50-T3",
+      "TF95-T4"
+    ],
+    "N9(EdgeNode)": [
+      "TF24-T3",
+      "TF82-T1",
+      "TF64-T2",
+      "TF99-T1",
+      "TF64-T3",
+      "TF35-T4",
+      "TF27-T1",
+      "TF78-T1",
+      "TF68-T3",
+      "TF27-T2",
+      "TF27-T3",
+      "TF71-T1",
+      "TF71-T2",
+      "TF40-T2",
+      "TF6-T4",
+      "TF40-T3",
+      "TF93-T1",
+      "TF99-T3",
+      "TF81-T4",
+      "TF61-T2",
+      "TF61-T3"
+    ],
+    "N8(EdgeNode)": [
+      "TF73-T2",
+      "TF75-T2",
+      "TF63-T2",
+      "TF44-T2",
+      "TF36-T2",
+      "TF62-T3",
+      "TF88-T3",
+      "TF62-T2",
+      "TF62-T4",
+      "TF83-T2",
+      "TF83-T3"
+    ],
+    "N6(EdgeNode)": [
+      "TF94-T2",
+      "TF53-T3",
+      "TF94-T3",
+      "TF94-T4",
+      "TF29-T3",
+      "TF96-T1",
+      "TF96-T2",
+      "TF37-T2",
+      "TF41-T1",
+      "TF41-T2",
+      "TF60-T2",
+      "TF9-T2",
+      "TF9-T3"
+    ]
+  },
+  "taskflow_summary_log": [
+    {
+      "taskflow_id": 10,
+      "start_time": 13.517891390415926,
+      "end_time": 2836.5884959066298,
+      "duration": 2823.0706045162137
+    },
+    {
+      "taskflow_id": 11,
+      "start_time": 14.270565499952514,
+      "end_time": 5368.249988862911,
+      "duration": 5353.979423362958
+    },
+    {
+      "taskflow_id": 12,
+      "start_time": 15.109998346691338,
+      "end_time": 1232.232409873105,
+      "duration": 1217.1224115264138
+    },
+    {
+      "taskflow_id": 13,
+      "start_time": 17.70825250061678,
+      "end_time": 6639.596319269404,
+      "duration": 6621.888066768787
+    },
+    {
+      "taskflow_id": 14,
+      "start_time": 17.781937855529627,
+      "end_time": 53.15986253000926,
+      "duration": 35.37792467447964
+    },
+    {
+      "taskflow_id": 15,
+      "start_time": 17.873098884648627,
+      "end_time": 361.8700840981271,
+      "duration": 343.99698521347847
+    },
+    {
+      "taskflow_id": 16,
+      "start_time": 17.893524471332853,
+      "end_time": 4182.896837155161,
+      "duration": 4165.003312683828
+    },
+    {
+      "taskflow_id": 17,
+      "start_time": 19.68101215094774,
+      "end_time": 19723.66575382741,
+      "duration": 19703.98474167646
+    },
+    {
+      "taskflow_id": 18,
+      "start_time": 21.186796382812958,
+      "end_time": 12226.20370375043,
+      "duration": 12205.016907367617
+    },
+    {
+      "taskflow_id": 19,
+      "start_time": 23.22711066375851,
+      "end_time": 1930.7995529428888,
+      "duration": 1907.5724422791302
+    },
+    {
+      "taskflow_id": 20,
+      "start_time": 27.07233250192536,
+      "end_time": 820.808934997549,
+      "duration": 793.7366024956236
+    },
+    {
+      "taskflow_id": 21,
+      "start_time": 28.677572060875505,
+      "end_time": 803.0811669586526,
+      "duration": 774.4035948977771
+    },
+    {
+      "taskflow_id": 22,
+      "start_time": 29.296501519488473,
+      "end_time": 87.16027803786751,
+      "duration": 57.86377651837904
+    },
+    {
+      "taskflow_id": 23,
+      "start_time": 30.813037496368626,
+      "end_time": 18275.12038207149,
+      "duration": 18244.30734457512
+    },
+    {
+      "taskflow_id": 24,
+      "start_time": 30.93891190819917,
+      "end_time": 873.0322787732965,
+      "duration": 842.0933668650973
+    },
+    {
+      "taskflow_id": 25,
+      "start_time": 31.960343794591243,
+      "end_time": 9021.876979468749,
+      "duration": 8989.916635674157
+    },
+    {
+      "taskflow_id": 26,
+      "start_time": 32.11507347731889,
+      "end_time": 92.10722512872721,
+      "duration": 59.99215165140832
+    },
+    {
+      "taskflow_id": 27,
+      "start_time": 35.00949392701041,
+      "end_time": 6354.673221643914,
+      "duration": 6319.663727716904
+    },
+    {
+      "taskflow_id": 28,
+      "start_time": 35.74732120532147,
+      "end_time": 16944.43033898872,
+      "duration": 16908.683017783398
+    },
+    {
+      "taskflow_id": 29,
+      "start_time": 36.28288692362223,
+      "end_time": 8302.881872787875,
+      "duration": 8266.598985864253
+    },
+    {
+      "taskflow_id": 30,
+      "start_time": 36.590167276712684,
+      "end_time": 832.9225564269824,
+      "duration": 796.3323891502697
+    },
+    {
+      "taskflow_id": 31,
+      "start_time": 38.078422115439416,
+      "end_time": 139.14810934154772,
+      "duration": 101.0696872261083
+    },
+    {
+      "taskflow_id": 32,
+      "start_time": 38.6875045317425,
+      "end_time": 119.5700004421631,
+      "duration": 80.8824959104206
+    },
+    {
+      "taskflow_id": 33,
+      "start_time": 39.52783923861011,
+      "end_time": 7043.580479326292,
+      "duration": 7004.052640087682
+    },
+    {
+      "taskflow_id": 34,
+      "start_time": 39.5468078102725,
+      "end_time": 23672.79804605369,
+      "duration": 23633.251238243418
+    },
+    {
+      "taskflow_id": 35,
+      "start_time": 40.50818873946736,
+      "end_time": 2469.362963155845,
+      "duration": 2428.854774416378
+    },
+    {
+      "taskflow_id": 36,
+      "start_time": 41.455185417311135,
+      "end_time": 5684.620892875258,
+      "duration": 5643.165707457946
+    },
+    {
+      "taskflow_id": 37,
+      "start_time": 42.41473339004037,
+      "end_time": 16752.277396947225,
+      "duration": 16709.862663557185
+    },
+    {
+      "taskflow_id": 38,
+      "start_time": 45.292648468781394,
+      "end_time": 31194.68840305364,
+      "duration": 31149.395754584857
+    },
+    {
+      "taskflow_id": 39,
+      "start_time": 46.43778742743177,
+      "end_time": 4902.918605260896,
+      "duration": 4856.480817833464
+    },
+    {
+      "taskflow_id": 40,
+      "start_time": 46.88330592016301,
+      "end_time": 7943.8662897062095,
+      "duration": 7896.982983786046
+    },
+    {
+      "taskflow_id": 41,
+      "start_time": 47.457838328920495,
+      "end_time": 20160.363021813053,
+      "duration": 20112.905183484134
+    },
+    {
+      "taskflow_id": 42,
+      "start_time": 48.65394613005387,
+      "end_time": 505.35407105996205,
+      "duration": 456.70012492990816
+    },
+    {
+      "taskflow_id": 43,
+      "start_time": 48.716061425979184,
+      "end_time": 373.5075187950862,
+      "duration": 324.791457369107
+    },
+    {
+      "taskflow_id": 44,
+      "start_time": 49.814973906037224,
+      "end_time": 13791.894569726443,
+      "duration": 13742.079595820405
+    },
+    {
+      "taskflow_id": 45,
+      "start_time": 50.925571339331604,
+      "end_time": 2597.883169375486,
+      "duration": 2546.957598036154
+    },
+    {
+      "taskflow_id": 46,
+      "start_time": 51.16177804466561,
+      "end_time": 10063.092490921672,
+      "duration": 10011.930712877007
+    },
+    {
+      "taskflow_id": 47,
+      "start_time": 51.29980673229806,
+      "end_time": 15532.13652344319,
+      "duration": 15480.836716710892
+    },
+    {
+      "taskflow_id": 48,
+      "start_time": 51.67876869843453,
+      "end_time": 30564.533092786427,
+      "duration": 30512.85432408799
+    },
+    {
+      "taskflow_id": 49,
+      "start_time": 52.130870754780915,
+      "end_time": 240.79406827339386,
+      "duration": 188.66319751861295
+    },
+    {
+      "taskflow_id": 50,
+      "start_time": 52.975298535431826,
+      "end_time": 36819.90975200972,
+      "duration": 36766.934453474285
+    },
+    {
+      "taskflow_id": 51,
+      "start_time": 53.55262284636142,
+      "end_time": 372.10008079553774,
+      "duration": 318.5474579491763
+    },
+    {
+      "taskflow_id": 52,
+      "start_time": 58.00712022697048,
+      "end_time": 19649.007023884085,
+      "duration": 19590.999903657113
+    },
+    {
+      "taskflow_id": 53,
+      "start_time": 58.11475533950577,
+      "end_time": 2747.324556401787,
+      "duration": 2689.2098010622813
+    },
+    {
+      "taskflow_id": 54,
+      "start_time": 58.34905685513873,
+      "end_time": 13666.62750299399,
+      "duration": 13608.278446138851
+    },
+    {
+      "taskflow_id": 55,
+      "start_time": 58.52497040857333,
+      "end_time": 348.8134267784708,
+      "duration": 290.28845636989746
+    },
+    {
+      "taskflow_id": 56,
+      "start_time": 59.58371313347975,
+      "end_time": 19891.389639975532,
+      "duration": 19831.80592684205
+    },
+    {
+      "taskflow_id": 57,
+      "start_time": 59.87579366838702,
+      "end_time": 3356.744467062594,
+      "duration": 3296.8686733942072
+    },
+    {
+      "taskflow_id": 58,
+      "start_time": 60.50373524946121,
+      "end_time": 14666.878942759904,
+      "duration": 14606.375207510442
+    },
+    {
+      "taskflow_id": 59,
+      "start_time": 60.78401226316407,
+      "end_time": 1246.801942581938,
+      "duration": 1186.0179303187738
+    },
+    {
+      "taskflow_id": 60,
+      "start_time": 60.95713971593728,
+      "end_time": 15713.100978923561,
+      "duration": 15652.143839207623
+    },
+    {
+      "taskflow_id": 61,
+      "start_time": 61.07409512797843,
+      "end_time": 32412.487054204834,
+      "duration": 32351.412959076857
+    },
+    {
+      "taskflow_id": 62,
+      "start_time": 62.14216731777758,
+      "end_time": 8689.045806261938,
+      "duration": 8626.90363894416
+    },
+    {
+      "taskflow_id": 63,
+      "start_time": 62.29087958916587,
+      "end_time": 7698.912341285477,
+      "duration": 7636.621461696311
+    },
+    {
+      "taskflow_id": 64,
+      "start_time": 62.50976019187091,
+      "end_time": 1746.6153210968712,
+      "duration": 1684.1055609050002
+    },
+    {
+      "taskflow_id": 65,
+      "start_time": 62.96977415743063,
+      "end_time": 7311.471542184406,
+      "duration": 7248.501768026975
+    },
+    {
+      "taskflow_id": 66,
+      "start_time": 64.69010580920867,
+      "end_time": 1397.77055872924,
+      "duration": 1333.0804529200313
+    },
+    {
+      "taskflow_id": 67,
+      "start_time": 64.79225069587324,
+      "end_time": 778.1590102949324,
+      "duration": 713.3667595990592
+    },
+    {
+      "taskflow_id": 68,
+      "start_time": 66.61206962026824,
+      "end_time": 3797.3311133245347,
+      "duration": 3730.7190437042664
+    },
+    {
+      "taskflow_id": 69,
+      "start_time": 66.71310440307349,
+      "end_time": 829.9993552900376,
+      "duration": 763.2862508869641
+    },
+    {
+      "taskflow_id": 70,
+      "start_time": 70.46213585377808,
+      "end_time": 13124.292748883674,
+      "duration": 13053.830613029895
+    },
+    {
+      "taskflow_id": 71,
+      "start_time": 71.09447245644346,
+      "end_time": 6421.09471470299,
+      "duration": 6350.000242246547
+    },
+    {
+      "taskflow_id": 72,
+      "start_time": 74.856399628563,
+      "end_time": 847.4234345878555,
+      "duration": 772.5670349592924
+    },
+    {
+      "taskflow_id": 73,
+      "start_time": 75.78487812984643,
+      "end_time": 1092.7715983223713,
+      "duration": 1016.9867201925249
+    },
+    {
+      "taskflow_id": 74,
+      "start_time": 77.12912339453315,
+      "end_time": 2925.152146359335,
+      "duration": 2848.023022964802
+    },
+    {
+      "taskflow_id": 75,
+      "start_time": 77.16909969701666,
+      "end_time": 2190.020820273349,
+      "duration": 2112.8517205763324
+    },
+    {
+      "taskflow_id": 76,
+      "start_time": 77.50150994231329,
+      "end_time": 1652.0446715253943,
+      "duration": 1574.543161583081
+    },
+    {
+      "taskflow_id": 77,
+      "start_time": 77.62956670378782,
+      "end_time": 9844.410969277085,
+      "duration": 9766.781402573297
+    },
+    {
+      "taskflow_id": 78,
+      "start_time": 77.98074279065135,
+      "end_time": 4262.518365725434,
+      "duration": 4184.537622934782
+    },
+    {
+      "taskflow_id": 79,
+      "start_time": 78.10713143237045,
+      "end_time": 11176.631447809708,
+      "duration": 11098.524316377338
+    },
+    {
+      "taskflow_id": 80,
+      "start_time": 78.48983239016808,
+      "end_time": 5745.976869415796,
+      "duration": 5667.487037025628
+    },
+    {
+      "taskflow_id": 81,
+      "start_time": 79.02471677641243,
+      "end_time": 23443.281507060306,
+      "duration": 23364.256790283893
+    },
+    {
+      "taskflow_id": 82,
+      "start_time": 79.09101417290347,
+      "end_time": 921.0525292314189,
+      "duration": 841.9615150585155
+    },
+    {
+      "taskflow_id": 83,
+      "start_time": 80.27020370003382,
+      "end_time": 49994.70405705292,
+      "duration": 49914.433853352886
+    },
+    {
+      "taskflow_id": 84,
+      "start_time": 81.10630124526445,
+      "end_time": 32460.329440523063,
+      "duration": 32379.223139277798
+    },
+    {
+      "taskflow_id": 85,
+      "start_time": 81.41471608513629,
+      "end_time": 1741.7997864057352,
+      "duration": 1660.385070320599
+    },
+    {
+      "taskflow_id": 86,
+      "start_time": 82.15547503672374,
+      "end_time": 1006.9962556095478,
+      "duration": 924.8407805728241
+    },
+    {
+      "taskflow_id": 87,
+      "start_time": 82.254125350404,
+      "end_time": 1111.5012234488445,
+      "duration": 1029.2470980984406
+    },
+    {
+      "taskflow_id": 88,
+      "start_time": 83.11202099238943,
+      "end_time": 6107.972193943555,
+      "duration": 6024.860172951166
+    },
+    {
+      "taskflow_id": 89,
+      "start_time": 85.76127691740062,
+      "end_time": 855.5237922050862,
+      "duration": 769.7625152876856
+    },
+    {
+      "taskflow_id": 90,
+      "start_time": 86.14483712784306,
+      "end_time": 1011.6278122377864,
+      "duration": 925.4829751099434
+    },
+    {
+      "taskflow_id": 91,
+      "start_time": 87.24568304910322,
+      "end_time": 3584.692827910748,
+      "duration": 3497.4471448616446
+    },
+    {
+      "taskflow_id": 92,
+      "start_time": 87.38701376312245,
+      "end_time": 5174.170530783269,
+      "duration": 5086.783517020147
+    },
+    {
+      "taskflow_id": 93,
+      "start_time": 88.64694759533016,
+      "end_time": 17247.513217904227,
+      "duration": 17158.866270308896
+    },
+    {
+      "taskflow_id": 94,
+      "start_time": 88.98860176513196,
+      "end_time": 3266.5856177104347,
+      "duration": 3177.5970159453027
+    },
+    {
+      "taskflow_id": 95,
+      "start_time": 89.19095220191201,
+      "end_time": 37950.28354593453,
+      "duration": 37861.09259373262
+    },
+    {
+      "taskflow_id": 96,
+      "start_time": 90.07408124820161,
+      "end_time": 7137.027771216595,
+      "duration": 7046.9536899683935
+    },
+    {
+      "taskflow_id": 97,
+      "start_time": 90.09439370254876,
+      "end_time": 15863.357895403438,
+      "duration": 15773.263501700889
+    },
+    {
+      "taskflow_id": 98,
+      "start_time": 91.86013478018012,
+      "end_time": 2888.6605152536545,
+      "duration": 2796.8003804734744
+    },
+    {
+      "taskflow_id": 99,
+      "start_time": 91.86484131475082,
+      "end_time": 14522.975020043938,
+      "duration": 14431.110178729186
+    }
+  ],
+  "skipped_tasks_log": [],
+  "individual_expressions": [
+    "sub(neg(mul(add(TCT, TWT), TUT)), TCT)",
+    "max(protect_div(max(TCT, TNC), max(TCT, TPS)), sub(sub(neg(max(TCT, TNC)), TPS), neg(sub(TWT, TPS))))"
+  ]
+}

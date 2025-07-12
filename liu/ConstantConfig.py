@@ -1,0 +1,58 @@
+Average_MIPS = 19895.83 #MIPS（amd和intel的# ）
+linebandwidth = 2 #MHZ #数据传输率(data transmission rate) [800,1000]Mbit/s
+Average_TFLOPS = 32750 #显卡的平局值
+vCPU = [1,       2,      4,      8,      16,     32]  #  [1,2,4,8,16]              #核数 阿里云
+
+"""
+AMD处理器配置
+"""
+
+Ryzen_9_5950X_MIPS = 240000
+Ryzen_9_5950X_CORE_MIPS = 15000 #cpu process数据
+Ryzen_9_5950X_CORES=16
+
+Ryzen_7_5800X_MIPS = 170000
+Ryzen_7_5800X_CORE_MIPS = 21250
+Ryzen_7_5800X_CORES = 8
+
+Ryzen_5_5600X_MIPS = 120000
+Ryzen_5_5600X_CORE_MIPS = 20000
+Ryzen_5_5600X_CORES = 6
+
+Ryzen_5_7600X_MIPS = 140000
+Ryzen_5_7600X_CORE_MIPS = 23333.33
+Ryzen_5_7600X_CORES = 6
+
+"""
+ Intel 处理器
+"""
+Core_i9_12900K_MIPS = 230000
+Core_i9_12900K_CORE_MIPS = 14375
+Core_i9_12900K_CORES = 16
+
+Core_i7_12700K_MIPS = 190000
+Core_i7_12700K_CORE_MIPS = 15833.33
+Core_i7_12700K_CORES = 12
+
+Core_i5_12600K_MIPS = 150000
+Core_i5_12600K_CORE_MIPS = 15000
+Core_i5_12600K_CORES = 10
+
+Core_i5_13600K_MIPS = 180000
+Core_i5_13600K_CORE_MIPS = 12857.14
+Core_i5_13600K_CORES = 14
+
+"""
+显卡 单位GFLOPS
+"""
+NVIDIA_RTX_4090_TFLOPS = 82000      # RTX 4090总单精度性能 #gpuprocess数据
+NVIDIA_RTX_4090_CORES = 16384    # 核心数
+
+NVIDIA_RTX_4060_TFLOPS = 15000      # RTX 4060总单精度性能
+NVIDIA_RTX_4060_CORES = 3072     # 核心数
+
+NVIDIA_A100_TFLOPS = 19000         # A100总单精度性能
+NVIDIA_A100_CORES = 6912         # 核心数
+
+NVIDIA_V100_TFLOPS = 15000          # V100总单精度性能
+NVIDIA_V100_CORES = 5120         # 核心数
