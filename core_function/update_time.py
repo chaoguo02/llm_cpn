@@ -58,3 +58,36 @@ def computing_upload_cost(task,node):#0.29元/MB 中国移动
     task.want_get_bandwidth(node)
     cost=8 * task.runtime * fig.Average_MIPS * task.cpu_require*0.29 *1/7  #$
     return cost
+<<<<<<< HEAD
+=======
+
+
+def isTaskAllocation1(task,node):#考虑capacity
+    #print("node,task",node,task)
+    if(task.cpu_require <= node.cpu_capacity ):
+        if(task.ram_require <= node.ram_capacity):
+            if (task.gpu_require <= node.gpu_capacity):
+                  return 1
+    return 0
+def isTaskAllocation2(task,node):#考虑available
+    #print("node,task",node,task)
+    if(task.cpu_require <= node.cpu_available ):
+        if(task.ram_require <= node.ram_available):
+            if (task.gpu_require <= node.gpu_available):
+                  return 1
+    return 0
+
+def upload_Task(tasks,nodes):
+    nodes.sort(key=lambda x: x.cpu_capacity, reverse=True)
+    for node in nodes:
+        if node.assign_task(tasks):
+            return True
+    return False
+
+def download_Task(tasks,nodes):
+    nodes.sort(key=lambda x: x.cpu_capacity, reverse=True)
+    for node in nodes:
+        if node.assign_task(tasks):
+            return True
+    return False
+>>>>>>> aac832fff3df6c6eab1da5efd1fcacc1d187e7ed
