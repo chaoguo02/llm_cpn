@@ -13,7 +13,6 @@ from core_function.evaluate import work_processing
 from core_function.update_time import computing_Task, computing_upload_time
 from dirty_work.dirty_works import count_leaf_types
 
-
 #  统一参数设置
 NUM_NODES = 5                 # 节点数
 NUM_TASKFLOWS = 10             # 任务流数
@@ -141,17 +140,9 @@ def decode2(individual, node, taskflows, nodes, pset):
         print(f"[❌ 异常] decode2 选择节点 {node.id} 的等待任务时出错：{e}")
         return None
 
-
-
-def main_dual_tree(num_run):
+def main_dual_tree(num_run, pre_generated_taskflows):
     nodes = createNode(NUM_NODES,0)
-    pre_generated_taskflows = []
-    for i in range(NUM_TEST_SETS):
-        taskflow = createTaskFlows(NUM_TASKFLOWS,1,i)
-        pre_generated_taskflows.append(taskflow)
-
     pset, toolbox = init_pset_toolbox(TOURNAMENT_SIZE)
-
     population = toolbox.population(n=POP_SIZE)
     pop,genre_min_fitness_values,elite= eaSimple(population=population,
                                                        toolbox=toolbox,
@@ -189,9 +180,13 @@ if __name__ == '__main__':
     # 记录每棵树的叶子类型统计比例累加值
     leaf_ratio_result_sum = [OrderedDict() for _ in range(NUM_TREES)]
     # NUM_RUNS 次独立运行
+    pre_generated_taskflows = []
+    for i in range(NUM_TEST_SETS):
+        taskflow = createTaskFlows(NUM_TASKFLOWS, 1, i)
+        pre_generated_taskflows.append(taskflow)
     for num_run in range(NUM_RUNS):
         # 每次独立运行后，得到每一代的测试集的最小适应度，以及每棵树的叶子比例统计
-        genre_min_fitness_values, leaf_ratio_result = main_dual_tree(num_run)
+        genre_min_fitness_values, leaf_ratio_result = main_dual_tree(num_run,pre_generated_taskflows)
 
         run_fitness_history.append(genre_min_fitness_values)
         genre_min_fitness_values_sum = [a + b for a, b in
