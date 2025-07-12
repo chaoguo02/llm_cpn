@@ -206,6 +206,8 @@ def find_earlist_time(queue1,queue2):
                 break
     return queue1,queue2,task_queue1,task_queue2
 
+# 添加新方法
+
 def decode1(individual, task, nodes, taskflows, pset):
     try:
         heuristic_1 = gp.compile(expr=individual[0], pset=pset[0])
