@@ -11,7 +11,7 @@ from core_function.running_process import eaSimple
 from core_function.data_loader import createNode, createTaskFlows
 from core_function.evaluate import work_processing
 from core_function.update_time import computing_Task, computing_upload_time
-from dirty_work.dirty_works import protect_div, count_leaf_types
+from dirty_work.dirty_works import count_leaf_types
 
 
 #  统一参数设置
