@@ -6,10 +6,11 @@ import networkx as nx
 from deap.gp import graph
 from networkx.drawing.nx_agraph import graphviz_layout
 from collections import OrderedDict
+
+from core_function.data_loader import createNode
+from core_function.update_time import computing_Task, computing_upload_time
 # import matplotlib.pyplot as plt
-from liu.DatasetReader import createNode
-from Class.Taskflow import TaskFlow
-from liu.exetime import computing_Task, computing_upload_time
+from entity.Taskflow import TaskFlow
 import multiprocessing
 import copy
 import json
