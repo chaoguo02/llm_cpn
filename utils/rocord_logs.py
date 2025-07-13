@@ -5,12 +5,12 @@ import os
 from core_function.evaluate import work_processing
 
 
-def record_best_individual_log(individual, pre_generated_taskflows, nodes, pset, generation_index, run_index, base_dir="best_ind_logs"):
+def record_best_individual_log(individual, pre_generated_taskflows, nodes, pset, generation_index, run_index,decode1,decode2, base_dir="best_ind_logs"):
 
     test_taskflows_sample = copy.deepcopy(pre_generated_taskflows[0])
     nodes_log = copy.deepcopy(nodes)
 
-    _, log_dict = work_processing(individual, test_taskflows_sample, nodes_log, pset, return_log=True)
+    _, log_dict = work_processing(individual, test_taskflows_sample, nodes_log, pset,decode1,decode2, return_log=True)
 
     log_dict["individual_expressions"] = [str(tree) for tree in individual]
 

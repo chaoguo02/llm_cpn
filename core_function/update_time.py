@@ -1,14 +1,25 @@
 import core_function.config as fig
 
-def present_time_update(present_time, taskflows):  # 只更新那些未完成任务的当前时间，所以当一个任务已完成时，它的当前时间就是完成时间
+def present_time_update(present_time, taskflows):
+    # 只更新那些未完成任务的当前时间，所以当一个任务已完成时，它的当前时间就是完成时间
     for taskflow in taskflows:
         for task in taskflow.tasks:
             if task.finish is False:
                 task.present_time = present_time
 
+#
+def predict_node_idle_time(node):
+    """
+    计算节点的预期空闲时间，考虑 waiting_queue 中所有任务的执行时间
+    """
+    predicted_time = node.begin_idle_time
+    for queued_task in node.waiting_queue:
+        predicted_time += computing_Task(queued_task, node) + computing_upload_time(queued_task, node)
+    return predicted_time
+
 
 def find_earlist_time(queue1,queue2):
-    # 使用 sort() 方法排序
+    # 寻找下一个操作时
     queue1.sort(key=lambda x: x[1])
     queue2.sort(key=lambda x: x[1])
     task_queue1 = []

@@ -6,7 +6,8 @@ from utils.rocord_logs import record_best_individual_log
 
 
 def eaSimple(population, toolbox, nodes, pre_generated_taskflows, num_taskflow,
-             cxpb, mutpb, ngen, elitism, pset, num_run,base_seed,num_train_sets,num_test_sets, min_fitness_per_gen=None):
+             cxpb, mutpb, ngen, elitism, pset, num_run,base_seed,num_train_sets,num_test_sets,
+             decode1,decode2,min_fitness_per_gen=None):
 
     if min_fitness_per_gen is None:
         min_fitness_per_gen = []
@@ -18,7 +19,7 @@ def eaSimple(population, toolbox, nodes, pre_generated_taskflows, num_taskflow,
         for i in range(num_train_sets)
     ]
     fitnesses_list = [
-        evaluate_offspring_in_parallel(initial_inds, taskflows, nodes, pset, work_processing)
+        evaluate_offspring_in_parallel(initial_inds, taskflows, nodes, pset,decode1,decode2, work_processing)
         for taskflows in initial_taskflows_list
     ]
 
@@ -33,11 +34,11 @@ def eaSimple(population, toolbox, nodes, pre_generated_taskflows, num_taskflow,
     elite_inds = sortPopulation(toolbox, population)[:elitism]
 
     # 测试集评估最优个体
-    test_fitnesses = evaluate_on_testSets(elite_inds[0], nodes, pset, pre_generated_taskflows)
+    test_fitnesses = evaluate_on_testSets(elite_inds[0], nodes, pset,decode1,decode2, pre_generated_taskflows)
     min_fitness_per_gen.append(sum(test_fitnesses) / num_test_sets)
 
     # 保存第0代最优个体调度日志和表达式
-    record_best_individual_log(elite_inds[0],pre_generated_taskflows,nodes,pset,0,num_run)
+    record_best_individual_log(elite_inds[0],pre_generated_taskflows,nodes,pset,0,num_run,decode1,decode2)
 
     for gen in range(1, ngen + 1):
 
@@ -56,7 +57,7 @@ def eaSimple(population, toolbox, nodes, pre_generated_taskflows, num_taskflow,
         # 训练集评估
         fitnesses_list = []
         for train_taskflows in train_taskflows_list:
-            fitnesses = evaluate_offspring_in_parallel(offspring_inds, train_taskflows, nodes, pset, work_processing)
+            fitnesses = evaluate_offspring_in_parallel(offspring_inds, train_taskflows, nodes, pset,decode1,decode2, work_processing)
             fitnesses_list.append(fitnesses)
         # 两次仿真评估并取平均适应度
         fitnesses_avg = []
@@ -73,10 +74,10 @@ def eaSimple(population, toolbox, nodes, pre_generated_taskflows, num_taskflow,
         elite_inds = sortPopulation(toolbox, population)[:elitism]
 
         # 测试集评估最优个体
-        test_fitnesses = evaluate_on_testSets(elite_inds[0], nodes, pset, pre_generated_taskflows)
+        test_fitnesses = evaluate_on_testSets(elite_inds[0], nodes, pset,decode1,decode2, pre_generated_taskflows)
         min_fitness_per_gen.append(sum(test_fitnesses) / num_test_sets)
 
         # 保存当前代最优个体调度日志和表达式
-        record_best_individual_log(elite_inds[0],pre_generated_taskflows,nodes,pset,gen,num_run)
+        record_best_individual_log(elite_inds[0],pre_generated_taskflows,nodes,pset,gen,num_run,decode1,decode2)
 
     return population, min_fitness_per_gen, elite_inds[0]
