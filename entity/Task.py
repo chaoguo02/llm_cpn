@@ -33,11 +33,22 @@ class Task:
 
         self.upward_rank=0 #每个任务的计算量为runtime/cpu_require*gpu_require
 
+    # def __repr__(self):
+    #     return (f"<Global id={self.global_id},  arrive={self.arrivetime:.2f}, "
+    #             f"cpu={self.cpu_require}, ram={self.ram_require}, gpu={self.gpu_require}, "
+    #             f"end={'{:.2f}'.format(self.endtime) if self.endtime else 'None'}, "
+    #             f"on_node={self.node.id if self.node else 'None'}>")
+
     def __repr__(self):
-        return (f"<Global id={self.global_id},  arrive={self.arrivetime:.2f}, "
-                f"cpu={self.cpu_require}, ram={self.ram_require}, gpu={self.gpu_require}, "
-                f"end={'{:.2f}'.format(self.endtime) if self.endtime else 'None'}, "
-                f"on_node={self.node.id if self.node else 'None'}>")
+        return (
+            f"<Task {self.global_id} |\n"
+            f"Arrive: {self.arrivetime:} | Present: {self.present_time:} | "
+            f"Runtime: {self.runtime} | End: {self.endtime:} if self.endtime else 'None'\n"
+            f"CPU: {self.cpu_require} | RAM: {self.ram_require} | GPU: {self.gpu_require}\n"
+            f"On Node: {self.node.id if self.node else 'None'} | Flow: TF{self.taskflow_id}\n"
+            f"Upload: {self.uploadSize} | Output: {self.outputFileSize} | Finish: {self.finish}\n"
+            f">"
+        )
 
     def want_get_bandwidth(self,node):#seed随机种子,设置为node的下标乘上taskflow_id
         seed=self.taskflow_id * node.id

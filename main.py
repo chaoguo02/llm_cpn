@@ -7,17 +7,17 @@ from core_function.body_framework import main_dual_tree
 if __name__ == '__main__':
 
     #  统一参数设置
-    NUM_NODES = 5  # 节点数
-    NUM_TASKFLOWS = 12  # 任务流数
+    NUM_NODES = 10  # 节点数
+    NUM_TASKFLOWS = 20  # 任务流数
     POP_SIZE = 20  # 种群规模
     NGEN = 2  # 进化代数
-    CXPB = 0.8  # 交叉概率
-    MUTPB = 0.1  # 变异概率
+    CXPB = 0.84  # 交叉概率
+    MUTPB = 0.11  # 变异概率
     TOURNAMENT_SIZE = 1  # 锦标赛选择规模
     HEIHT_LIMIT = 6  # 最大树高
     NUM_TREES = 2  # 每个个体中树的数量
     NUM_RUNS = 1  # 重复运行次数（用于统计均值）
-    ELITISM_NUM = int(POP_SIZE * 0.05)  # 精英个体的数量
+    ELITISM_NUM = max(1,int(POP_SIZE * 0.05))  # 精英个体的数量
     NUM_TEST_SETS = 1  # 测试集数量
     NUM_TRAIN_SETS = 1  # 训练集数量
     BASE_SEED = 10000  # 训练集我们从10000开始

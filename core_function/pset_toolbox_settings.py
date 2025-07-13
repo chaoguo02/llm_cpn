@@ -48,7 +48,7 @@ def init_pset_toolbox(tournament_size):
     toolbox.register("expr", gp.genHalfAndHalf, min_=2, max_=4)
     toolbox.register("individual", initIndividual, creator.Individual, toolbox.expr, pset=pset, size=2)  # 假设我们创建2个树
     toolbox.register("population", tools.initRepeat, list, toolbox.individual)
-    toolbox.register("evaluate", work_processing)  # 不能绑定taskflows=taskflows,nodes=nodes
+    toolbox.register("evaluate", work_processing)
     toolbox.register("select", tools.selTournament, tournsize=tournament_size)
     toolbox.register("mate", cxOnePointListOfTrees)
     toolbox.register("mutate", mutUniformListOfTrees, expr=toolbox.expr, pset=pset)

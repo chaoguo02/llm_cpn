@@ -9,7 +9,6 @@ def decode1(individual, task, nodes, taskflows, pset):
         heuristic_1 = gp.compile(expr=individual[0], pset=pset[0])
         scores = []
         for node in nodes:
-
             score = heuristic_1(computing_Task(task, node), task.present_time - task.arrivetime,
                 len(task.descendant), computing_upload_time(task, node), get_fifo_node_score(node))
             scores.append((node, score))
@@ -25,7 +24,6 @@ def decode2(individual, node, taskflows, nodes, pset):
         heuristic_2 = gp.compile(expr=individual[1], pset=pset[1])
         scores = []
         for task in node.waiting_queue:
-
             k = task.taskflow_id
             score = heuristic_2(computing_Task(task, node), task.present_time - task.arrivetime, len(task.descendant),
                 taskflows[k].find_descendant_avg_time(taskflows, task, nodes),

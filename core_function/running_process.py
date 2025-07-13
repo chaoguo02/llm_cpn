@@ -6,11 +6,10 @@ from utils.rocord_logs import record_best_individual_log
 
 
 def eaSimple(population, toolbox, nodes, pre_generated_taskflows, num_taskflow,
-             cxpb, mutpb, ngen, elitism, pset, num_run,base_seed,num_train_sets,num_test_sets, min_fitness_values=None, genre_min_fitness_values=None):
-    if min_fitness_values is None:
-        min_fitness_values = []
-    if genre_min_fitness_values is None:
-        genre_min_fitness_values = []
+             cxpb, mutpb, ngen, elitism, pset, num_run,base_seed,num_train_sets,num_test_sets, min_fitness_per_gen=None):
+
+    if min_fitness_per_gen is None:
+        min_fitness_per_gen = []
 
     # 初始种群评估（这里也是要对训练集进行改造的）
     initial_inds = [ind for ind in population if not ind.fitness.valid]
@@ -35,7 +34,7 @@ def eaSimple(population, toolbox, nodes, pre_generated_taskflows, num_taskflow,
 
     # 测试集评估最优个体
     test_fitnesses = evaluate_on_testSets(elite_inds[0], nodes, pset, pre_generated_taskflows)
-    genre_min_fitness_values.append(sum(test_fitnesses) / num_test_sets)
+    min_fitness_per_gen.append(sum(test_fitnesses) / num_test_sets)
 
     # 保存第0代最优个体调度日志和表达式
     record_best_individual_log(elite_inds[0],pre_generated_taskflows,nodes,pset,0,num_run)
@@ -75,9 +74,9 @@ def eaSimple(population, toolbox, nodes, pre_generated_taskflows, num_taskflow,
 
         # 测试集评估最优个体
         test_fitnesses = evaluate_on_testSets(elite_inds[0], nodes, pset, pre_generated_taskflows)
-        genre_min_fitness_values.append(sum(test_fitnesses) / num_test_sets)
+        min_fitness_per_gen.append(sum(test_fitnesses) / num_test_sets)
 
         # 保存当前代最优个体调度日志和表达式
         record_best_individual_log(elite_inds[0],pre_generated_taskflows,nodes,pset,gen,num_run)
 
-    return population, genre_min_fitness_values, elite_inds[0]
+    return population, min_fitness_per_gen, elite_inds[0]

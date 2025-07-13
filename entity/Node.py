@@ -20,10 +20,22 @@ class Node:
         self.completed_runningtime=0 #实际运行时间
         self.price = price
 
+    # def __repr__(self):
+        # return (f"<Node id={self.id}, type={self.node_type}, idle_time={self.begin_idle_time:.2f}, "
+        #         f"cpu={self.cpu_capacity}, ram={self.ram_capacity}, gpu={self.gpu_capacity}, "
+        #         f"price={self.price}>")
+
     def __repr__(self):
-        return (f"<Node id={self.id}, type={self.node_type}, idle_time={self.begin_idle_time:.2f}, "
-                f"cpu={self.cpu_capacity}, ram={self.ram_capacity}, gpu={self.gpu_capacity}, "
-                f"price={self.price}>")
+        return (
+            f"<Node #{self.id} | Type: {self.node_type}\n"
+            f"IdleTime: {self.begin_idle_time:.2f}s | Delay: {self.delay}ms | Bandwidth: {self.bandwidth}Mbps\n"
+            f"CPU: {self.cpu_capacity} cores @ {self.cpu_process} | Available: {self.cpu_available}\n"
+            f"RAM: {self.ram_capacity} units | Available: {self.ram_available}\n"
+            f"GPU: {self.gpu_capacity} cores @ {self.gpu_process} | Available: {self.gpu_available}\n"
+            f"Completed Tasks: {self.completed_tasks_number} | Runtime: {self.completed_runningtime:.2f}s\n"
+            f"Price per sec: ${self.price}\n"
+            f">"
+        )
 
     def generate_heft_time(self,task):
         sum_time=self.begin_idle_time+computing_Task(task,self)+computing_upload_time(task,self)

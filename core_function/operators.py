@@ -2,7 +2,6 @@ import operator
 import random
 from deap import gp
 
-
 def initIndividual(container, func, pset, size):
     return container(gp.PrimitiveTree(func(pset[i])) for i in range(size))
 
@@ -49,7 +48,6 @@ def varAnd(population, toolbox, cxpb, mutpb):
     return offspring
 
 def sortPopulation(toolbox, population):
-    # 克隆个体，避免修改原始种群
     populationCopy = [toolbox.clone(ind) for ind in population]
     # 使用 sorted 按适应度升序排序
     sorted_population = sorted(populationCopy, key=lambda ind: ind.fitness.values)

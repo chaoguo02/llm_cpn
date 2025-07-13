@@ -1,7 +1,7 @@
 Average_MIPS = 19895.83 #MIPS（amd和intel的# ）
 linebandwidth = 2 #MHZ #数据传输率(data transmission rate) [800,1000]Mbit/s
 Average_TFLOPS = 32750 #显卡的平局值
-vCPU = [1,       2,      4,      8,      16,     32]  #  [1,2,4,8,16]              #核数 阿里云
+vCPU = [1, 2, 4, 8, 16, 32]  #  [1,2,4,8,16]              #核数 阿里云
 
 """
 AMD处理器配置

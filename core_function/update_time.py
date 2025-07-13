@@ -41,16 +41,15 @@ def find_earlist_time(queue1,queue2):
                 break
     return queue1,queue2,task_queue1,task_queue2
 
+# computing_Task计算的是 指定的task在该node上的执行时间
 def computing_Task(task,node):
     task_value=[task.runtime * fig.Average_MIPS * task.cpu_require,task.runtime *fig.Average_TFLOPS*task.gpu_require]
-    cpuexetime = task_value[0] / (task.cpu_require * node.cpu_process)  #task.cpu_require要求的核数，node.cpu_process单个核的计算能力
-    exetime = cpuexetime
+    return task_value[0] / (task.cpu_require * node.cpu_process)  #task.cpu_require要求的核数，node.cpu_process单个核的计算能力
 
-    return exetime
 
+# computing_upload_time计算的是 将task上传到node所需的时间
 def computing_upload_time(task,node):#设计算机为64位  双精度浮点数 1MIPS=8MB/S
     task.want_get_bandwidth(node)
-    #exetime=8*max(task.runtime * fig.Average_MIPS *task.cpu_require ,task.runtime * fig.Average_TFLOPS*task.gpu_require) / (task.get_bandwidth *1000000)  #s
     exetime = 8 * task.runtime * fig.Average_MIPS * task.cpu_require / (task.get_bandwidth * 1000000)  # s 只考虑cpu
     return exetime
 
