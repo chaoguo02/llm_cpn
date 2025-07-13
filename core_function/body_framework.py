@@ -6,7 +6,7 @@ from dirty_work.dirty_works import count_leaf_types
 
 def main_dual_tree(num_run, pre_generated_taskflows,num_nodes,tournament_size,
                    pop_size,num_taskflows,cxpb, mutpb,ngen,elitism_num,
-                   base_seed,num_train_sets,num_test_sets,decode1,decode2):
+                   base_seed,num_train_sets,num_test_sets,decode1,decode2,strategy):
     nodes = createNode(num_nodes)
     pset, toolbox = init_pset_toolbox(tournament_size)
     population = toolbox.population(n=pop_size)
@@ -26,6 +26,7 @@ def main_dual_tree(num_run, pre_generated_taskflows,num_nodes,tournament_size,
                                                        num_test_sets = num_test_sets,
                                                        decode1=decode1,
                                                        decode2=decode2,
+                                                       strategy=strategy,
                                                        min_fitness_per_gen=[]
                                                  )
     leaf_ratio_result=[]

@@ -7,7 +7,7 @@ from utils.rocord_logs import record_best_individual_log
 
 def eaSimple(population, toolbox, nodes, pre_generated_taskflows, num_taskflow,
              cxpb, mutpb, ngen, elitism, pset, num_run,base_seed,num_train_sets,num_test_sets,
-             decode1,decode2,min_fitness_per_gen=None):
+             decode1,decode2,strategy,min_fitness_per_gen=None):
 
     if min_fitness_per_gen is None:
         min_fitness_per_gen = []
@@ -38,7 +38,7 @@ def eaSimple(population, toolbox, nodes, pre_generated_taskflows, num_taskflow,
     min_fitness_per_gen.append(sum(test_fitnesses) / num_test_sets)
 
     # 保存第0代最优个体调度日志和表达式
-    record_best_individual_log(elite_inds[0],pre_generated_taskflows,nodes,pset,0,num_run,decode1,decode2)
+    record_best_individual_log(elite_inds[0],pre_generated_taskflows,nodes,pset,0,num_run,decode1,decode2,strategy)
 
     for gen in range(1, ngen + 1):
 

@@ -6,7 +6,7 @@ from core_function.get_decode_functions import get_decode_functions
 
 def parse_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--strategy', type=str, default='random',
+    parser.add_argument('--strategy', type=str, default='minmax',
                         choices=['gp', 'fifo','greedy','sjf','random','minmin','minmax'],
                         help='Specify which scheduling strategy to use: gp or fifo')
     return parser.parse_args()
@@ -45,7 +45,7 @@ if __name__ == '__main__':
             POP_SIZE, NUM_TASKFLOWS,
             CXPB, MUTPB, NGEN, ELITISM_NUM,
             BASE_SEED, NUM_TRAIN_SETS, NUM_TEST_SETS,
-            decode1, decode2
+            decode1, decode2,args.strategy
         )
 
         run_fitness_history.append(min_fitness_per_gen)

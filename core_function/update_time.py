@@ -18,6 +18,12 @@ def predict_node_idle_time(node):
     return predicted_time
 
 
+def estimated_finish_time(task,node):
+    compute_time = computing_Task(task, node)
+    upload_time = computing_upload_time(task, node)
+    start_time = max(task.present_time, node.begin_idle_time)
+    return start_time + compute_time + upload_time
+
 def find_earlist_time(queue1,queue2):
     # 寻找下一个操作时
     queue1.sort(key=lambda x: x[1])
