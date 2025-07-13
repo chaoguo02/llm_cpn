@@ -1,6 +1,7 @@
 import copy
 import multiprocessing
 
+from baselines.heuristic_score import decode1, decode2
 from core_function.update_time import present_time_update, find_earlist_time, computing_Task, computing_upload_time
 
 def evaluate_offspring_in_parallel(offspring, taskflows, nodes, pset, work_processing):
@@ -82,18 +83,18 @@ def work_processing(individual, taskflows, nodes, pset, return_log=False):
                 print(f"🟡 任务 {sanitize_task_id(task)} 分配至节点 {sanitize_node_id(node)}")
 
                 if task.present_time >= node.begin_idle_time:
-                    try:
-                        allocate_resources(task, node)
-                    except Exception as e:
-                        print(f"[❌资源分配失败] Task {task.global_id} 分配到 Node {node.id} 时失败：{e}")
-                        skipped_tasks_log.append({
-                            "task_id": sanitize_task_id(task),
-                            "taskflow_id": task.taskflow_id,
-                            "reason": f"资源分配失败: {str(e)}",
-                            "node_id": sanitize_node_id(node),
-                            "present_time": task.present_time
-                        })
-                        continue
+                    # try:
+                    #     allocate_resources(task, node)
+                    # except Exception as e:
+                    #     print(f"[❌资源分配失败] Task {task.global_id} 分配到 Node {node.id} 时失败：{e}")
+                    #     skipped_tasks_log.append({
+                    #         "task_id": sanitize_task_id(task),
+                    #         "taskflow_id": task.taskflow_id,
+                    #         "reason": f"资源分配失败: {str(e)}",
+                    #         "node_id": sanitize_node_id(node),
+                    #         "present_time": task.present_time
+                    #     })
+                    #     continue
 
                     task_time = computing_Task(task, node) + computing_upload_time(task, node)
                     endtime = task.present_time + task_time
@@ -128,7 +129,7 @@ def work_processing(individual, taskflows, nodes, pset, return_log=False):
 
             for finish_event in task_queue2:
                 finish_event.finish = True
-                release_resources(finish_event, finish_event.node)
+                # release_resources(finish_event, finish_event.node)
                 print(f"✔️ 任务 {sanitize_task_id(finish_event)} 执行完成")
 
             for task in task_queue2:
@@ -209,12 +210,12 @@ def work_processing(individual, taskflows, nodes, pset, return_log=False):
         return (avg_time,)
 
 
-def allocate_resources(node, task):
-    node.cpu_capacity -= task.cpu_require
-    node.ram_capacity -= task.ram_require
-    node.gpu_capacity -= task.gpu_require
-
-def release_resources(node, task):
-    node.cpu_capacity += task.cpu_require
-    node.ram_capacity += task.ram_require
-    node.gpu_capacity += task.gpu_require
+# def allocate_resources(node, task):
+#     node.cpu_capacity -= task.cpu_require
+#     node.ram_capacity -= task.ram_require
+#     node.gpu_capacity -= task.gpu_require
+#
+# def release_resources(node, task):
+#     node.cpu_capacity += task.cpu_require
+#     node.ram_capacity += task.ram_require
+#     node.gpu_capacity += task.gpu_require

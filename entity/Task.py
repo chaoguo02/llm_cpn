@@ -1,4 +1,3 @@
-
 import random
 # 任务类
 class Task:
@@ -30,14 +29,12 @@ class Task:
         #self.ram_allocated = ram_require  # GB
         #self.gpu_allocated = gpu_require  # 百分比
         self.node = None
-    #def share_information_process(self):  #向后辈传递信息
-        #self.informationshare #给后继节点的信息分享量
-        #self.descendant #传递对象
+
 
         self.upward_rank=0 #每个任务的计算量为runtime/cpu_require*gpu_require
 
     def __repr__(self):
-        return (f"<Global id={self.global_id}, flow={self.taskflow_id}, arrive={self.arrivetime:.2f}, "
+        return (f"<Global id={self.global_id},  arrive={self.arrivetime:.2f}, "
                 f"cpu={self.cpu_require}, ram={self.ram_require}, gpu={self.gpu_require}, "
                 f"end={'{:.2f}'.format(self.endtime) if self.endtime else 'None'}, "
                 f"on_node={self.node.id if self.node else 'None'}>")

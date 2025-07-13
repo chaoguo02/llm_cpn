@@ -1,10 +1,11 @@
 import numpy as np
 from core_function.data_loader import createTaskFlows
 from core_function.evaluate import evaluate_offspring_in_parallel, work_processing, evaluate_on_testSets
-from dual_tree_dymanic_work import sortPopulation, record_best_individual_log, varAnd
+from core_function.operators import sortPopulation, varAnd
+from utils.rocord_logs import record_best_individual_log
 
 
-def eaSimple(population, toolbox, nodes, pre_generated_taskflows, num_TaskFlow,
+def eaSimple(population, toolbox, nodes, pre_generated_taskflows, num_taskflow,
              cxpb, mutpb, ngen, elitism, pset, num_run,base_seed,num_train_sets,num_test_sets, min_fitness_values=None, genre_min_fitness_values=None):
     if min_fitness_values is None:
         min_fitness_values = []
@@ -14,7 +15,7 @@ def eaSimple(population, toolbox, nodes, pre_generated_taskflows, num_TaskFlow,
     # 初始种群评估（这里也是要对训练集进行改造的）
     initial_inds = [ind for ind in population if not ind.fitness.valid]
     initial_taskflows_list = [
-        createTaskFlows(num_TaskFlow, 0, base_seed + i)
+        createTaskFlows(num_taskflow, 0, base_seed + i)
         for i in range(num_train_sets)
     ]
     fitnesses_list = [
@@ -44,7 +45,7 @@ def eaSimple(population, toolbox, nodes, pre_generated_taskflows, num_TaskFlow,
         # 每一轮训练的时候改为两次仿真
         # train_taskflows = createTaskFlows(num_TaskFlow, 0, gen)
         train_taskflows_list = [
-            createTaskFlows(num_TaskFlow, 0, base_seed + gen * num_train_sets + i)
+            createTaskFlows(num_taskflow, 0, base_seed + gen * num_train_sets + i)
             for i in range(num_train_sets)
         ]
 

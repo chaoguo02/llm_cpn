@@ -1,9 +1,10 @@
 import random
 import networkx as nx
 import matplotlib.pyplot as plt
+import pandas as pd
 
-from core_function.data_loader import AlibabaClusterReader, createTask
 from core_function.update_time import computing_Task
+from entity.Task import Task
 
 """
 下标大的节点是下标小的节点的后继
@@ -12,7 +13,7 @@ from core_function.update_time import computing_Task
 """
 # 任务类
 class TaskFlow:
-    def __init__(self,id,all_arrive_time,genre,seed): #genre用于表示是上面种类的任务流,seed随机树种子
+    def __init__(self,id,all_arrive_time,split_type,seed):
         # 随机生成节点数量
         self.rng=random.Random(seed)
         self.id=id
@@ -20,26 +21,16 @@ class TaskFlow:
         self.graph = nx.DiGraph()  # 有向图，保存任务的依赖关系
         self.all_arrive_time=all_arrive_time
         self.finish_time=0 #inf表示任务流失败
-        #Filename = "Dataset/Alibaba/AlibabaCluster1.csv"
         Filename = "./Dataset/Alibaba/AlibabaCluster1.csv"
-        if genre==0:
+        if split_type == 0:
             dataSet = AlibabaClusterReader(Filename, self.num_tasks,0,70,seed) #在前百分之70中随机找num_tasks个数据
-        elif genre==1:
+        elif split_type == 1:
             dataSet = AlibabaClusterReader(Filename, self.num_tasks,70,100,seed)#在后百分之30中随机找num_tasks个数据
         # 此处tasks是一个列表类型的数据
         self.tasks = createTask(dataSet,self.id,self.all_arrive_time)
         # 随机生成任务节点
         for task_id in range(self.num_tasks):
             self.graph.add_node(task_id, task=self.tasks[task_id])
-
-        # self.tasks = createTask(dataSet, self.id, self.all_arrive_time)
-        #
-        # # 为每个 task 添加唯一 global_id，并加入图中
-        # for task_id in range(self.num_tasks):
-        #     task = self.tasks[task_id]
-        #     task.global_id = f"TF{self.id}_T{task_id}"  # 全局唯一标识
-        #     task.id = task_id  # 确保 id 字段是 taskflow 内的局部编号
-        #     self.graph.add_node(task_id, task=task)
 
         # 随机生成依赖关系，确保图是无环的，并且每个节点至少有一个依赖关系
         self.generate_random_dependencies()
@@ -155,6 +146,55 @@ class TaskFlow:
 
 
 
+def AlibabaClusterReader(Filename, num, start_percentage, end_percentage, seed):
+    # 设置随机种子
+    # 读取数据集，并且指定所需的列
+    data = pd.read_csv(Filename, usecols=['start_time', 'end_time', 'plan_cpu', 'plan_mem', 'plan_gpu'])
+
+    # 删除包含空值的行
+    data.dropna(subset=['start_time', 'end_time', 'plan_cpu', 'plan_mem', 'plan_gpu'], inplace=True)
+
+    # 删除 plan_cpu, plan_mem, plan_gpu 中为 0 的行
+    data = data[(data['start_time'] != None) & (data['end_time'] != None) &
+                (data['plan_cpu'] != 0) & (data['plan_mem'] != 0) &
+                (data['plan_gpu'] != 0)]
+
+    # 获取数据集的总行数
+    num_rows = len(data)
+
+    # 计算前 start_percentage 到 end_percentage 的行索引范围
+    start_row = int(num_rows * start_percentage / 100)
+    end_row = int(num_rows * end_percentage / 100)
+
+    # 选择从 start_row 到 end_row 之间的行
+    selected_data = data.iloc[start_row:end_row]
+
+    # 从选定的部分数据中随机抽取 num 行数据
+    sampled_data = selected_data.sample(n=num, random_state=seed)
+
+    # 将 plan_cpu 转换为核数
+    sampled_data['plan_cpu'] = sampled_data['plan_cpu'] / 100
+    sampled_data['plan_gpu'] = sampled_data['plan_gpu'] / 100
+    # 将数据转换为 NumPy 数组
+    data_array = sampled_data.to_numpy()
+
+    return data_array
+
+def createTask(dataSet,taskflow_id,all_arrive_time):#用于动态工作流
+    taskList = []
+    id = 0
+    for datarow in dataSet:
+        given_starttime = float(datarow[0])
+        given_endtime = float(datarow[1])
+        cpu = datarow[2]
+        ram = datarow[3]
+        gpu = datarow[4]
+        realruntime = given_endtime - given_starttime
+        #print(cpu,ram)
+        task = Task(id, taskflow_id,realruntime,cpu,ram,  gpu, all_arrive_time)
+        taskList.append(task)
+        id += 1
+    return taskList
 
 
 

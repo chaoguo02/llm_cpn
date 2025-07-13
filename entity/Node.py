@@ -14,7 +14,6 @@ class Node:
         self.gpu_available = gpu_capacity
         self.bandwidth = bandwidth #带宽
         self.delay = delay
-        #self.tasks = []  # 当前节点的任务列表
         self.waiting_queue = []  # 等待队列，为任务本身
         self.begin_idle_time = 0 #node什么时候开始空闲
         self.completed_tasks_number=0 #已经处理过的节点数量

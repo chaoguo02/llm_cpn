@@ -1,14 +1,15 @@
 import operator
+
+from core_function.operators import initIndividual, mutUniformListOfTrees, cxOnePointListOfTrees
 from dirty_work.dirty_works import protect_div
 from deap import gp, creator, base, tools
-from dual_tree_dymanic_work import initIndividual,cxOnePointListOfTrees,mutUniformListOfTrees
 from core_function.evaluate import work_processing
 
 def init_pset_toolbox(tournament_size):
     pset = []
     for idx in range(2):
         if idx == 0:
-            pset1 = gp.PrimitiveSet("MAIN", 4)
+            pset1 = gp.PrimitiveSet("MAIN", 5)
             pset1.addPrimitive(operator.add, 2)
             pset1.addPrimitive(operator.sub, 2)
             pset1.addPrimitive(operator.mul, 2)
@@ -24,7 +25,7 @@ def init_pset_toolbox(tournament_size):
             pset.append(pset1)
 
         elif idx == 1:
-            pset2 = gp.PrimitiveSet("MAIN", 5)
+            pset2 = gp.PrimitiveSet("MAIN", 6)
             pset2.addPrimitive(operator.add, 2)
             pset2.addPrimitive(operator.sub, 2)
             pset2.addPrimitive(operator.mul, 2)

@@ -73,7 +73,7 @@ def generate_data(taskList, nodeList):
                       columns=['Task_CPU', 'Task_RAM','Node_CPU', 'Node_RAM', 'Can_Schedule'])
     return df
 
-def createTask(dataSet,self_id,all_arrive_time):#用于动态工作流
+def createTask(dataSet,taskflow_id,all_arrive_time):#用于动态工作流
     taskList = []
     id = 0
     for datarow in dataSet:
@@ -84,41 +84,41 @@ def createTask(dataSet,self_id,all_arrive_time):#用于动态工作流
         gpu = datarow[4]
         realruntime = given_endtime - given_starttime
         #print(cpu,ram)
-        task = Task(id, self_id,realruntime,cpu,ram,  gpu, all_arrive_time)
+        task = Task(id, taskflow_id,realruntime,cpu,ram,  gpu, all_arrive_time)
         taskList.append(task)
         id += 1
     return taskList
 
-def createNode(nodeNum,rate): #genre用于表示不同规模的网络，rate表示云边端不同的比例
-    rate_value=[[0.2,0.4,0.4],[0.2,0.4,0.4],[0.3,0.3,0.4]]
-    gpu_computing_power=[1000000,100000,10000]
-    cpu_computing_power=[500000,100000,10000]
+def createNode(node_num):
+    proportions = [0.6, 0.3, 0.1]
+    node_types = ["EdgeNode", "FogNode", "CloudNode"]
+    gpu_process     = [10000,   100000,   1000000]
+    cpu_process      = [10000,   100000,   500000]
+    cpu_capacities  = [100,     100,      100]
+    gpu_capacities  = [100,     100,      100]
+    ram_capacities  = [100,     250,      512]
+    prices          = [0.0000029, 0.0000229, 0.000115]
+    bandwidths      = [100,     100,      100]
+    delays          = [100,     100,      100]
+    node_counts = [int(p * node_num) for p in proportions]
     nodes = []
-    node_number=  [int(x*nodeNum) for x in rate_value[rate]]
-    Num=0
-    for i in range(len(node_number)):
-        for j in range(node_number[i]):
-            cpu_capacity = 100  # 初始化
-            gpu_capacity = 100
-            bandwidth = 100
-            delay = 100
-            if i==0:
-                node_type="CloudNode"
-                price=0.000115 #单价每秒$
-                ram_capacity = 512 # 初始化
-            if i==1:
-                node_type="FogNode"
-                price =0.0000229
-                ram_capacity = 250  # 初始化
-            if i==2:
-                node_type="EdgeNode"
-                price =0.0000029
-                ram_capacity = 100  # 初始化
-            # 创建节点并添加到节点列表中
-            node = Node(Num, gpu_computing_power[i], cpu_computing_power[i], bandwidth, delay, cpu_capacity, ram_capacity, gpu_capacity,
-                            node_type, price)
+    node_id = 0
+    for i in range(len(node_types)):
+        for _ in range(node_counts[i]):
+            node = Node(
+                id=node_id,
+                gpu_process=gpu_process[i],
+                cpu_process=cpu_process[i],
+                bandwidth=bandwidths[i],
+                delay=delays[i],
+                cpu_capacity=cpu_capacities[i],
+                ram_capacity=ram_capacities[i],
+                gpu_capacity=gpu_capacities[i],
+                node_type=node_types[i],
+                price=prices[i]
+            )
             nodes.append(node)
-            Num+=1
+            node_id += 1
 
     return nodes
 

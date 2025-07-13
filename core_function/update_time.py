@@ -1,4 +1,4 @@
-import config as fig
+import core_function.config as fig
 
 def present_time_update(present_time, taskflows):  # 只更新那些未完成任务的当前时间，所以当一个任务已完成时，它的当前时间就是完成时间
     for taskflow in taskflows:
