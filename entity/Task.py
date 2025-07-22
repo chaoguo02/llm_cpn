@@ -43,7 +43,7 @@ class Task:
         return (
             f"<Task {self.global_id} |\n"
             f"Arrive: {self.arrivetime:} | Present: {self.present_time:} | "
-            f"Runtime: {self.runtime} | End: {self.endtime:} if self.endtime else 'None'\n"
+            f"Runtime: {self.runtime} | End: {self.endtime if self.endtime else 'None'} \n"
             f"CPU: {self.cpu_require} | RAM: {self.ram_require} | GPU: {self.gpu_require}\n"
             f"On Node: {self.node.id if self.node else 'None'} | Flow: TF{self.taskflow_id}\n"
             f"Upload: {self.uploadSize} | Output: {self.outputFileSize} | Finish: {self.finish}\n"
@@ -54,9 +54,9 @@ class Task:
         seed=self.taskflow_id * node.id
         rng=random.Random(seed)
         if node.node_type == "CloudNode":
-            self.get_bandwidth = rng.randint(20,30) #MHZ
+            self.get_bandwidth = rng.randint(40,60) #MHZ
         elif node.node_type == "FogNode":
-            self.get_bandwidth = rng.randint(60,90)
+            self.get_bandwidth = rng.randint(80,100)
         elif node.node_type == "EdgeNode":
             self.get_bandwidth = rng.randint(120,150)
 

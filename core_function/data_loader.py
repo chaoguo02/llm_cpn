@@ -3,7 +3,7 @@ import numpy as np
 from entity.Node import Node
 from entity.Task import Task
 from entity.Taskflow import TaskFlow
-
+import random
 
 def AlibabaClusterReader(Filename, num, start_percentage, end_percentage, seed):
     # 设置随机种子
@@ -89,11 +89,15 @@ def createTask(dataSet,taskflow_id,all_arrive_time):#用于动态工作流
         id += 1
     return taskList
 
-def createNode(node_num):
+def createNode(node_num, seed=None):
+    if seed is not None:
+        random.seed(seed)
     proportions = [0.6, 0.3, 0.1]
     node_types = ["EdgeNode", "FogNode", "CloudNode"]
     gpu_process     = [10000,   100000,   1000000]
-    cpu_process      = [10000,   100000,   500000]
+    # 与 upload_同步一下
+    cpu_process      = [10000,   16000,   20000]
+    # cpu_process = [100000, 300000, 600000]
     cpu_capacities  = [100,     100,      100]
     gpu_capacities  = [100,     100,      100]
     ram_capacities  = [100,     250,      512]

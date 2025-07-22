@@ -21,7 +21,8 @@ class TaskFlow:
         self.graph = nx.DiGraph()  # 有向图，保存任务的依赖关系
         self.all_arrive_time=all_arrive_time
         self.finish_time=0 #inf表示任务流失败
-        Filename = "./Dataset/Alibaba/AlibabaCluster1.csv"
+        # Filename = "./Dataset/Alibaba/AlibabaCluster1.csv"
+        Filename = r"D:\StudyDocuments\Year202507\worklflow_schedule\Dataset\Alibaba\AlibabaCluster1.csv"
         if split_type == 0:
             dataSet = AlibabaClusterReader(Filename, self.num_tasks,0,70,seed) #在前百分之70中随机找num_tasks个数据
         elif split_type == 1:
@@ -35,6 +36,14 @@ class TaskFlow:
         # 随机生成依赖关系，确保图是无环的，并且每个节点至少有一个依赖关系
         self.generate_random_dependencies()
         self.generate_task_upward_rank()
+
+    def __repr__(self):
+        return (
+            f"TaskFlow(id={self.id}, "
+            f"arrival_time={self.all_arrive_time:.2f}, "
+            f"num_tasks={self.num_tasks}, "
+            f"finish_time={self.finish_time})"
+        )
 
     def generate_random_dependencies(self):
         # 获取节点列表

@@ -9,9 +9,16 @@ def computing_Task(task,node):
 
 # computing_upload_time计算的是 将task上传到node所需的时间
 def computing_upload_time(task,node):#设计算机为64位  双精度浮点数 1MIPS=8MB/S
+    base_upload = 0
+    # if node.node_type == 'EdgeNode':
+    #     base_upload = 50
+    # elif node.node_type == 'FogNode':
+    #     base_upload = 300
+    # elif node.node_type == 'CloudNode':
+    #     base_upload = 400
     task.want_get_bandwidth(node)
     exetime = 8 * task.runtime * fig.Average_MIPS * task.cpu_require / (task.get_bandwidth * 1000000)  # s 只考虑cpu
-    return exetime
+    return exetime + base_upload
 
 Filename = "../Dataset/Alibaba/AlibabaCluster1.csv"
 dataSet = AlibabaClusterReader(Filename, 20, 0, 70, 0)  # 在前百分之70中随机找num_tasks个数据

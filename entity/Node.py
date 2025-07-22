@@ -15,6 +15,9 @@ class Node:
         self.bandwidth = bandwidth #带宽
         self.delay = delay
         self.waiting_queue = []  # 等待队列，为任务本身
+        self.next_free_time = 0
+        self.last_task_endtime = 0
+        self.next_operation_time = 0
         self.begin_idle_time = 0 #node什么时候开始空闲
         self.completed_tasks_number=0 #已经处理过的节点数量
         self.completed_runningtime=0 #实际运行时间

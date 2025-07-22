@@ -6,9 +6,10 @@ from core_function.get_decode_functions import get_decode_functions
 
 def parse_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--strategy', type=str, default='minmax',
+    parser.add_argument('--strategy', type=str, default='gp',
                         choices=['gp', 'fifo','greedy','sjf','random','minmin','minmax'],
                         help='Specify which scheduling strategy to use: gp or fifo')
+    parser.add_argument('--result_log', type=str, default='./test')
     return parser.parse_args()
 
 if __name__ == '__main__':
@@ -16,7 +17,7 @@ if __name__ == '__main__':
     NUM_NODES = 10  # 节点数
     NUM_TASKFLOWS = 20  # 任务流数
     POP_SIZE = 20  # 种群规模
-    NGEN = 0  # 进化代数
+    NGEN = 2  # 进化代数
     CXPB = 0.84  # 交叉概率
     MUTPB = 0.11  # 变异概率
     TOURNAMENT_SIZE = 1  # 锦标赛选择规模
@@ -32,6 +33,7 @@ if __name__ == '__main__':
 
     # 设置全局调度策略
     decode1, decode2 = get_decode_functions(args.strategy)
+    result_log = args.result_log
     run_fitness_history = []
     avg_fitness_per_gen = [0] * NGEN
     leaf_ratio_result_sum = [OrderedDict() for _ in range(NUM_TREES)]
@@ -45,7 +47,7 @@ if __name__ == '__main__':
             POP_SIZE, NUM_TASKFLOWS,
             CXPB, MUTPB, NGEN, ELITISM_NUM,
             BASE_SEED, NUM_TRAIN_SETS, NUM_TEST_SETS,
-            decode1, decode2,args.strategy
+            decode1, decode2, args.strategy, result_log
         )
 
         run_fitness_history.append(min_fitness_per_gen)
